@@ -75,7 +75,7 @@ L'utilisation de l'ESP32 présente plusieurs avantages :
 
 > **Figure 3 — ESP32 connecté à la Smart Factory**
 
-![ESP32](../figures/module%20ESP32%20connecté.jpeg)
+<img src="../figures/module ESP32 connecté.jpeg" alt="ESP32" width="500">
 
 ---
 
