@@ -314,57 +314,78 @@ L'architecture a été conçue de manière modulaire afin de faciliter l'ajout d
 > - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
 > - [`docs/05_ESP32.md`](docs/05_ESP32.md)
 
-# 🏗️ Architecture générale
+# 🚀 Démarrage rapide
 
-Le projet repose sur une architecture modulaire permettant de séparer les différentes responsabilités du système tout en facilitant son évolution.
+Cette section présente les étapes essentielles permettant d'exécuter rapidement le projet.
 
-Le Digital Twin est composé de quatre couches principales :
+Pour une installation détaillée, consultez [`docs/06_Installation.md`](docs/06_Installation.md).
 
-- **La couche physique**, correspondant à la Smart Factory Connected de HESTIM.
-- **La couche d'acquisition**, assurant la récupération des données issues des équipements industriels.
-- **La couche de communication**, responsable du transport et de la distribution des données.
-- **La couche immersive**, permettant la visualisation, l'interaction et l'exécution des scénarios pédagogiques en Réalité Virtuelle.
+## Prérequis
 
-Le schéma suivant résume l'architecture globale du système.
+Avant de commencer, assurez-vous de disposer des éléments suivants :
 
-```text
-                    Smart Factory Connected
-                           │
-                           ▼
-                     ESP32 (IoT Gateway)
-                           │
-                     Réseau WiFi
-                           │
-                           ▼
-                     Serveur FastAPI
-                  (API + WebSocket)
-                           │
-             ┌─────────────┴─────────────┐
-             │                           │
-             ▼                           ▼
-      Unity Engine 6             Tableau de bord
-      Digital Twin VR             (Future évolution)
-             │
-             ▼
-        Meta Quest 3
+- Unity Engine 6
+- Meta Quest 3
+- Git
+- Python 3.11 ou supérieur
+- Visual Studio 2022 (ou Visual Studio Code)
+- Blender (optionnel)
+- FreeCAD (optionnel)
+
+---
+
+## 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/<username>/Digital-Twin-SmartFactory-VR.git
 ```
 
-Chaque composant possède un rôle spécifique :
+---
 
-| Composant | Rôle |
-|-----------|------|
-| **Smart Factory Connected** | Production physique des flacons en PEHD. |
-| **ESP32** | Acquisition des données provenant des équipements industriels. |
-| **FastAPI** | Centralisation des échanges de données entre les équipements et le Digital Twin. |
-| **Unity Engine 6** | Simulation immersive, logique métier, scénarios pédagogiques et visualisation des données. |
-| **Meta Quest 3** | Interaction immersive avec la Smart Factory virtuelle. |
+## 2. Ouvrir le projet Unity
 
-L'architecture a été conçue de manière modulaire afin de faciliter l'ajout de nouveaux équipements, de nouveaux capteurs, de nouvelles interfaces de supervision ainsi que l'intégration future d'un mode multijoueur collaboratif.
+- Ouvrir **Unity Hub**.
+- Ajouter le dossier contenant le projet.
+- Vérifier que tous les packages sont correctement importés.
+- Ouvrir la scène principale (`MAIN_scene`).
 
-> 📖 Les détails techniques de cette architecture sont disponibles dans :
->
-> - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
-> - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
-> - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
-> - [`docs/05_ESP32.md`](docs/05_ESP32.md)
+---
 
+## 3. Lancer le serveur FastAPI
+
+Depuis le dossier **FastAPI** :
+
+```bash
+pip install -r requirements.txt
+
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+---
+
+## 4. Exécuter l'application
+
+Connecter le casque **Meta Quest 3** puis lancer le projet depuis Unity.
+
+Le Digital Twin se connectera automatiquement au serveur FastAPI afin de récupérer les données disponibles.
+
+---
+
+## Première découverte recommandée
+
+Pour comprendre rapidement le fonctionnement du projet :
+
+1. Explorer la Smart Factory virtuelle.
+2. Tester le scénario **Étiquetage chronométré**.
+3. Observer les données temps réel provenant de la mini-usine.
+4. Consulter ensuite la documentation technique.
+
+```
+
+---
+
+### My suggestion
+
+From here, I would **stop adding long explanations** to the README. The remaining sections should be shorter and mostly point to the detailed documentation.
+
+That keeps the README concise and professional, while the `docs/` folder becomes the real technical reference. This is the approach used by many mature engineering and open-source projects.
