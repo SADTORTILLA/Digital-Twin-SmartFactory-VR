@@ -22,7 +22,7 @@
 
 ---
 
-## 📖 Présentation
+## Présentation
 
 Ce dépôt contient l'ensemble des développements réalisés durant un stage de fin d'études portant sur la conception d'un **Digital Twin immersif** d'une ligne de production de flacons en PEHD.
 
@@ -37,17 +37,17 @@ L'objectif est de proposer un environnement de **Réalité Virtuelle (VR)** repr
 
 Le projet combine plusieurs domaines technologiques :
 
-- 🏭 Smart Factory
-- 🧩 Digital Twin
-- 🥽 Réalité Virtuelle
-- 🌐 Internet des Objets (IoT)
-- 🔄 Communication temps réel
-- 🎓 Formation immersive
-- 📊 Supervision industrielle
+- Smart Factory
+- Digital Twin
+- Réalité Virtuelle
+- Internet des Objets (IoT)
+- Communication temps réel
+- Formation immersive
+- Supervision industrielle
 
 ---
 
-> **⚠️ Important**
+> **Important**
 >
 > Ce dépôt ne constitue pas uniquement le code source du projet.
 >
@@ -55,7 +55,7 @@ Le projet combine plusieurs domaines technologiques :
 >
 > Avant toute modification du projet, il est fortement recommandé de consulter la documentation disponible dans le dossier **`docs/`**.
 
-# 📚 Documentation
+# Documentation
 
 Afin de faciliter la prise en main du projet et d'assurer une continuité de son développement, une documentation technique détaillée est disponible dans le dossier **`docs/`**.
 
@@ -63,21 +63,21 @@ Chaque document répond à un objectif précis et il est recommandé de les cons
 
 | Document | Description |
 |----------|-------------|
-| 📄 [`docs/01_Project_Overview.md`](docs/01_Project_Overview.md) | Présentation générale du projet, contexte, objectifs et fonctionnement global. |
-| 📄 [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md) | Architecture globale du système, flux de données et interactions entre les composants matériels et logiciels. |
-| 📄 [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md) | Organisation du projet Unity, structure des scènes, scripts, prefabs, interactions VR et architecture logicielle. |
-| 📄 [`docs/04_FastAPI.md`](docs/04_FastAPI.md) | Documentation du serveur FastAPI, architecture du backend, API REST/WebSocket et communication avec Unity. |
-| 📄 [`docs/05_ESP32.md`](docs/05_ESP32.md) | Fonctionnement de l'ESP32, acquisition des données, configuration matérielle et communication réseau. |
-| 📄 [`docs/06_Installation.md`](docs/06_Installation.md) | Guide complet d'installation de l'environnement de développement et de mise en route du projet. |
-| 📄 [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md) | Description des scénarios pédagogiques implémentés, des objectifs d'apprentissage et des scénarios prévus. |
-| 📄 [`docs/08_Roadmap.md`](docs/08_Roadmap.md) | État d'avancement du projet, fonctionnalités restantes, améliorations envisagées et plan de développement. |
-| 📄 [`docs/09_Troubleshooting.md`](docs/09_Troubleshooting.md) | Résolution des problèmes les plus fréquents rencontrés lors de l'installation ou du développement. |
-| 📄 [`docs/10_Research.md`](docs/10_Research.md) | Présentation des travaux de recherche associés au projet, des expérimentations et des publications scientifiques. |
-| 📄 [`docs/11_Guide_For_Next_Intern.md`](docs/11_Guide_For_Next_Intern.md) | Guide de reprise du projet destiné au prochain stagiaire, avec les recommandations pour poursuivre le développement. |
+| [`docs/01_Project_Overview.md`](docs/01_Project_Overview.md) | Présentation générale du projet, contexte, objectifs et fonctionnement global. |
+| [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md) | Architecture globale du système, flux de données et interactions entre les composants matériels et logiciels. |
+| [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md) | Organisation du projet Unity, structure des scènes, scripts, prefabs, interactions VR et architecture logicielle. |
+| [`docs/04_FastAPI.md`](docs/04_FastAPI.md) | Documentation du serveur FastAPI, architecture du backend, API REST/WebSocket et communication avec Unity. |
+| [`docs/05_ESP32.md`](docs/05_ESP32.md) | Fonctionnement de l'ESP32, acquisition des données, configuration matérielle et communication réseau. |
+| [`docs/06_Installation.md`](docs/06_Installation.md) | Guide complet d'installation de l'environnement de développement et de mise en route du projet. |
+| [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md) | Description des scénarios pédagogiques implémentés, des objectifs d'apprentissage et des scénarios prévus. |
+| [`docs/08_Roadmap.md`](docs/08_Roadmap.md) | État d'avancement du projet, fonctionnalités restantes, améliorations envisagées et plan de développement. |
+| [`docs/09_Troubleshooting.md`](docs/09_Troubleshooting.md) | Résolution des problèmes les plus fréquents rencontrés lors de l'installation ou du développement. |
+| [`docs/10_Research.md`](docs/10_Research.md) | Présentation des travaux de recherche associés au projet, des expérimentations et des publications scientifiques. |
+| [`docs/11_Guide_For_Next_Intern.md`](docs/11_Guide_For_Next_Intern.md) | Guide de reprise du projet destiné au prochain stagiaire, avec les recommandations pour poursuivre le développement. |
 
 ---
 
-## 📖 Ordre de lecture recommandé
+## Ordre de lecture recommandé
 
 Pour une prise en main efficace, il est conseillé de suivre l'ordre suivant :
 
@@ -90,9 +90,9 @@ Pour une prise en main efficace, il est conseillé de suivre l'ordre suivant :
 7. `docs/08_Roadmap.md`
 8. `docs/11_Guide_For_Next_Intern.md`
 
-> 💡 **Conseil :** Avant de commencer le développement, prenez le temps de comprendre l'architecture générale du système. Cette étape vous permettra de mieux appréhender les interactions entre Unity, FastAPI, l'ESP32 et la Smart Factory, et facilitera l'ajout de nouvelles fonctionnalités.
+> **Conseil :** Avant de commencer le développement, prenez le temps de comprendre l'architecture générale du système. Cette étape vous permettra de mieux appréhender les interactions entre Unity, FastAPI, l'ESP32 et la Smart Factory, et facilitera l'ajout de nouvelles fonctionnalités.
 
-# 🏭 Vue d'ensemble du projet
+# Vue d'ensemble du projet
 
 Ce projet a été développé dans le cadre d'un stage de fin d'études réalisé au sein du laboratoire **H-FAB** de **HESTIM Engineering & Business School**, sur la plateforme **Smart Factory Connected (SFC)**.
 
@@ -113,30 +113,30 @@ Le projet constitue également un support expérimental pour plusieurs travaux d
 
 ---
 
-## 🎯 Fonctionnalités principales
+## Fonctionnalités principales
 
 Le projet comprend actuellement les fonctionnalités suivantes :
 
-- ✅ Modélisation 3D complète de la Smart Factory.
-- ✅ Intégration des équipements industriels dans Unity.
-- ✅ Développement d'un environnement immersif compatible avec **Meta Quest 3**.
-- ✅ Simulation du fonctionnement de la ligne de production.
-- ✅ Architecture de communication **ESP32 → FastAPI → Unity**.
-- ✅ Visualisation temps réel de données provenant du système physique.
-- ✅ Scénario pédagogique d'étiquetage chronométré.
-- ✅ Collecte de données expérimentales pour l'évaluation des utilisateurs.
+- Modélisation 3D complète de la Smart Factory.
+- Intégration des équipements industriels dans Unity.
+- Développement d'un environnement immersif compatible avec **Meta Quest 3**.
+- Simulation du fonctionnement de la ligne de production.
+- Architecture de communication **ESP32 → FastAPI → Unity**.
+- Visualisation temps réel de données provenant du système physique.
+- Scénario pédagogique d'étiquetage chronométré.
+- Collecte de données expérimentales pour l'évaluation des utilisateurs.
 
 Les développements futurs prévoient notamment :
 
-- 🚧 Synchronisation complète de la ligne de production.
-- 🚧 Intégration d'un mode multijoueur collaboratif.
-- 🚧 Développement de nouveaux scénarios pédagogiques.
-- 🚧 Amélioration des interfaces de supervision.
-- 🚧 Extension du Digital Twin vers une plateforme collaborative complète.
+- Synchronisation complète de la ligne de production.
+- Intégration d'un mode multijoueur collaboratif.
+- Développement de nouveaux scénarios pédagogiques.
+- Amélioration des interfaces de supervision.
+- Extension du Digital Twin vers une plateforme collaborative complète.
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 | Domaine | Technologies |
 |----------|--------------|
@@ -150,14 +150,14 @@ Les développements futurs prévoient notamment :
 | IoT | ESP32 |
 | Gestion de versions | Git & GitHub |
 
-> 📖 Pour une description détaillée de l'architecture et des technologies employées, consultez :
+> Pour une description détaillée de l'architecture et des technologies employées, consultez :
 >
 > - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
 > - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
 > - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
 > - [`docs/05_ESP32.md`](docs/05_ESP32.md)
 
-# 🎯 Objectifs du projet
+# Objectifs du projet
 
 Le développement de ce Digital Twin s'inscrit dans une démarche visant à rapprocher les environnements industriels réels des technologies immersives afin de proposer une plateforme de formation, de supervision et d'expérimentation adaptée aux enjeux de l'Industrie 4.0.
 
@@ -175,7 +175,7 @@ Concevoir et développer un **Digital Twin immersif** de la ligne de production 
 
 Le projet se décompose en plusieurs objectifs techniques.
 
-### 🏭 Reproduire fidèlement la Smart Factory
+### Reproduire fidèlement la Smart Factory
 
 - Modéliser l'ensemble des équipements industriels.
 - Reconstituer l'environnement réel de la mini-usine.
@@ -183,7 +183,7 @@ Le projet se décompose en plusieurs objectifs techniques.
 
 ---
 
-### 🥽 Développer un environnement immersif
+### Développer un environnement immersif
 
 - Intégrer les modèles dans Unity.
 - Développer les interactions utilisateur.
@@ -192,7 +192,7 @@ Le projet se décompose en plusieurs objectifs techniques.
 
 ---
 
-### 🔄 Mettre en place une supervision connectée
+### Mettre en place une supervision connectée
 
 Développer une architecture permettant de transmettre des informations issues de la mini-usine vers le Digital Twin grâce à :
 
@@ -205,7 +205,7 @@ Cette architecture constitue la première étape vers un Digital Twin entièreme
 
 ---
 
-### 🎓 Développer des scénarios pédagogiques
+### Développer des scénarios pédagogiques
 
 Créer des scénarios immersifs permettant :
 
@@ -218,7 +218,7 @@ Le premier scénario implémenté concerne une opération chronométrée d'étiq
 
 ---
 
-### 🔬 Fournir une plateforme expérimentale
+### Fournir une plateforme expérimentale
 
 Le projet sert également de support pour :
 
@@ -229,7 +229,7 @@ Le projet sert également de support pour :
 
 ---
 
-### 🚀 Préparer les développements futurs
+### Préparer les développements futurs
 
 L'architecture a été conçue afin de faciliter l'intégration de nouvelles fonctionnalités, notamment :
 
@@ -241,7 +241,7 @@ L'architecture a été conçue afin de faciliter l'intégration de nouvelles fon
 
 ---
 
-## 📌 Périmètre actuel du projet
+## Périmètre actuel du projet
 
 À la date de cette version, les développements portent principalement sur :
 
@@ -254,13 +254,13 @@ L'architecture a été conçue afin de faciliter l'intégration de nouvelles fon
 
 Les fonctionnalités collaboratives et certaines extensions de supervision sont encore en cours de développement et font partie de la feuille de route présentée dans [`docs/08_Roadmap.md`](docs/08_Roadmap.md).
 
-> 📖 Pour une description détaillée des scénarios pédagogiques et des perspectives d'évolution, consultez :
+> Pour une description détaillée des scénarios pédagogiques et des perspectives d'évolution, consultez :
 >
 > - [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md)
 > - [`docs/08_Roadmap.md`](docs/08_Roadmap.md)
 > - [`docs/10_Research.md`](docs/10_Research.md)
 
-# 🏗️ Architecture générale
+# Architecture générale
 
 Le projet repose sur une architecture modulaire permettant de séparer les différentes responsabilités du système tout en facilitant son évolution.
 
@@ -307,14 +307,14 @@ Chaque composant possède un rôle spécifique :
 
 L'architecture a été conçue de manière modulaire afin de faciliter l'ajout de nouveaux équipements, de nouveaux capteurs, de nouvelles interfaces de supervision ainsi que l'intégration future d'un mode multijoueur collaboratif.
 
-> 📖 Les détails techniques de cette architecture sont disponibles dans :
+> Les détails techniques de cette architecture sont disponibles dans :
 >
 > - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
 > - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
 > - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
 > - [`docs/05_ESP32.md`](docs/05_ESP32.md)
 
-# 🚀 Démarrage rapide
+# Démarrage rapide
 
 Cette section présente les étapes essentielles permettant d'exécuter rapidement le projet.
 
@@ -381,7 +381,7 @@ Pour comprendre rapidement le fonctionnement du projet :
 
 ---
 
-# 🏭 Ligne de production
+# Ligne de production
 
 La Smart Factory Connected (SFC) de HESTIM reproduit une ligne de production de flacons en PEHD à échelle réduite. Elle permet de simuler un environnement industriel réel tout en servant de support à l'enseignement, à la recherche et à l'expérimentation.
 
@@ -401,14 +401,14 @@ Les principaux postes de travail sont :
 
 Chaque poste possède son propre comportement, ses animations ainsi que ses interactions utilisateur lorsqu'elles sont implémentées.
 
-> 📖 Une description détaillée des différents équipements est disponible dans
+> Une description détaillée des différents équipements est disponible dans
 > [`docs/01_Project_Overview.md`](docs/01_Project_Overview.md).
 
-# 🎓 Scénarios pédagogiques
+# Scénarios pédagogiques
 
 Le Digital Twin est conçu comme une plateforme pédagogique permettant de développer différents scénarios de formation immersive.
 
-### ✅ Implémenté
+### Implémenté
 
 **Scénario d'étiquetage chronométré**
 
@@ -416,7 +416,7 @@ Ce scénario permet d'entraîner l'utilisateur à réaliser une opération d'ét
 
 Les données collectées sont utilisées dans le cadre des travaux de recherche associés au projet.
 
-### 🚧 En développement
+### En développement
 
 - Implantation des systèmes de production
 - Robotisation de la ligne de production
@@ -424,10 +424,10 @@ Les données collectées sont utilisées dans le cadre des travaux de recherche 
 - Modification dynamique des paramètres de production
 - Mode multijoueur collaboratif
 
-> 📖 Plus d'informations :
+> Plus d'informations :
 > [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md)
 
-# 📁 Organisation du dépôt
+# Organisation du dépôt
 
 ```text
 Digital-Twin-SmartFactory-VR
@@ -455,7 +455,7 @@ Digital-Twin-SmartFactory-VR
 
 Le dossier **docs/** constitue la documentation officielle du projet.
 
-# 🚀 Perspectives d'évolution
+# Perspectives d'évolution
 
 Le projet a été conçu afin d'être évolutif.
 
@@ -472,7 +472,7 @@ Les principaux axes de développement sont :
 La feuille de route détaillée est disponible dans
 [`docs/08_Roadmap.md`](docs/08_Roadmap.md).
 
-# 👨‍💻 Guide pour le prochain stagiaire
+# Guide pour le prochain stagiaire
 
 Ce dépôt a été conçu afin de faciliter la reprise du projet par les futurs stagiaires.
 
@@ -486,10 +486,10 @@ Avant de commencer le développement, il est recommandé de :
 6. Consulter la feuille de route.
 7. Commencer le développement uniquement après avoir compris l'organisation du projet.
 
-> 📖 Guide complet :
+> Guide complet :
 > [`docs/11_Guide_For_Next_Intern.md`](docs/11_Guide_For_Next_Intern.md)
 
-# 🔬 Recherche scientifique
+# Recherche scientifique
 
 Ce projet constitue également une plateforme expérimentale utilisée dans le cadre de travaux de recherche portant sur :
 
@@ -504,7 +504,7 @@ Les expérimentations réalisées utilisent notamment les données collectées d
 Les informations relatives aux publications scientifiques sont disponibles dans
 [`docs/10_Research.md`](docs/10_Research.md).
 
-# 👥 Contributeurs
+# Contributeurs
 
 ## Développement
 
@@ -547,7 +547,7 @@ HESTIM – H-FAB Smart Factory
 - HESTIM Engineering & Business School
 - H-FAB Smart Factory Connected
 
-# 📄 Licence
+# Licence
 
 Ce projet est distribué sous licence **MIT**.
 

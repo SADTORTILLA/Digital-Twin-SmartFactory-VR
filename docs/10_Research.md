@@ -98,7 +98,7 @@ Deux articles scientifiques sont actuellement en cours de développement.
 
 Cet article présente l'architecture du Digital Twin immersif, les scénarios pédagogiques et le protocole expérimental.
 
-➡️ **Consulter le dossier :** [Research/icinco_paper](../Research/icinco_paper/)
+**Consulter le dossier :** [Research/icinco_paper](../Research/icinco_paper/)
 
 ---
 
@@ -106,7 +106,7 @@ Cet article présente l'architecture du Digital Twin immersif, les scénarios p�
 
 Cet article porte sur l'analyse expérimentale des performances des utilisateurs dans les scénarios immersifs.
 
-➡️ **Consulter le dossier :** [Research/Wincom](../Research/Wincom/)
+**Consulter le dossier :** [Research/Wincom](../Research/Wincom/)
 
 ---
 
