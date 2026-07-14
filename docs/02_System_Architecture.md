@@ -30,8 +30,9 @@ Chaque couche possède un rôle spécifique et communique avec les autres à tra
 
 > **Figure 1 — Architecture générale du système**
 
-![SFC Virtual Environment](figures/architecture_globale.drawio.png)
-
+<p align="center">
+  <img src="./Figures/HESTIM_logo.png" width="300">
+</p>
 ---
 
 # 3. Couche physique
