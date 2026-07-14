@@ -55,6 +55,67 @@ Le projet combine plusieurs domaines technologiques :
 >
 > Avant toute modification du projet, il est fortement recommandé de consulter la documentation disponible dans le dossier **`docs/`**.
 
+# 📚 Documentation
+
+Ce dépôt est accompagné d'une documentation technique détaillée située dans le dossier **`docs/`**. Elle a été rédigée afin de faciliter la prise en main du projet, d'expliquer les choix techniques réalisés et d'accompagner les futurs stagiaires dans la poursuite du développement.
+
+## Ordre de lecture recommandé
+
+Pour une compréhension progressive du projet, il est conseillé de consulter les documents dans l'ordre suivant :
+
+| Document | Description |
+|----------|-------------|
+| 📄 **01_Project_Overview.md** | Présentation générale du projet, contexte, objectifs et fonctionnement global. |
+| 📄 **02_System_Architecture.md** | Architecture complète du système, flux de données et interactions entre les différents composants. |
+| 📄 **03_Unity_Architecture.md** | Organisation du projet Unity, structure des scènes, scripts, prefabs et logique de développement. |
+| 📄 **04_FastAPI.md** | Documentation du serveur FastAPI, des API REST/WebSocket et des échanges de données avec Unity. |
+| 📄 **05_ESP32.md** | Configuration matérielle, fonctionnement de l'ESP32, acquisition des données et communication avec le serveur. |
+| 📄 **06_Installation.md** | Guide complet d'installation de l'environnement de développement et d'exécution du projet. |
+| 📄 **07_Educational_Scenarios.md** | Description détaillée des scénarios pédagogiques développés et des scénarios prévus. |
+| 📄 **08_Roadmap.md** | État d'avancement du projet, fonctionnalités restantes et feuille de route. |
+| 📄 **09_Troubleshooting.md** | Solutions aux problèmes les plus fréquents rencontrés lors du développement ou de l'installation. |
+| 📄 **10_Research.md** | Présentation des travaux de recherche associés au projet, des expérimentations et des publications. |
+| 📄 **11_Guide_For_Next_Intern.md** | Guide de reprise du projet destiné au prochain stagiaire, avec les étapes recommandées pour poursuivre le développement. |
+
+---
+
+## 🎯 À qui s'adresse cette documentation ?
+
+Cette documentation est destinée à plusieurs profils :
+
+- **Futurs stagiaires** souhaitant poursuivre le développement du Digital Twin.
+- **Étudiants** utilisant la Smart Factory dans un cadre pédagogique.
+- **Enseignants et encadrants** désirant comprendre l'architecture du projet.
+- **Chercheurs** travaillant sur les Digital Twins, la Réalité Virtuelle ou l'Industrie 4.0.
+- **Développeurs** souhaitant améliorer ou étendre les fonctionnalités existantes.
+
+---
+
+## 🚀 Première prise en main
+
+Si vous découvrez le projet pour la première fois, il est recommandé de suivre les étapes suivantes :
+
+1. Lire cette page (`README.md`) afin de comprendre les objectifs du projet.
+2. Consulter **01_Project_Overview.md** pour découvrir le contexte général.
+3. Étudier **02_System_Architecture.md** afin de comprendre les échanges entre les différents composants.
+4. Lire **03_Unity_Architecture.md** pour se familiariser avec l'organisation du projet Unity.
+5. Suivre **06_Installation.md** pour installer l'environnement de développement.
+6. Tester le scénario pédagogique actuellement implémenté.
+7. Consulter **08_Roadmap.md** et **11_Guide_For_Next_Intern.md** avant de commencer un nouveau développement.
+
+> **💡 Conseil**
+>
+> Avant de modifier le code, prenez le temps de comprendre l'architecture générale du système. Le projet est composé de plusieurs sous-systèmes (Unity, ESP32, FastAPI et Smart Factory) qui interagissent entre eux. Une bonne compréhension de cette architecture facilitera grandement les développements futurs.
+
+
+
+
+
+
+
+
+
+
 ## 1. Getting Started (How to Run the Project)
 
 Follow these steps to get the project up and running in Unity and start the VR simulation. For a more detailed guide, see [docs/06_Installation.md](docs/06_Installation.md).
