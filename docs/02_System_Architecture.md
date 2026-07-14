@@ -75,6 +75,8 @@ L'utilisation de l'ESP32 présente plusieurs avantages :
 
 > **Figure 3 — ESP32 connecté à la Smart Factory**
 
+![ESP32](../figures/module%20ESP32%20connecté.jpeg)
+
 ---
 
 # 5. Couche de communication
@@ -141,6 +143,8 @@ Cette séparation garantit une architecture robuste et facilement extensible.
 
 > **Figure 5 — Capture d'écran de la scène Unity**
 
+![scene_unity](../figures/Step_manager.png)
+
 ---
 
 # 7. Couche de visualisation
@@ -161,6 +165,8 @@ L'utilisateur peut :
 - consulter les informations de supervision.
 
 > **Figure 6 — Utilisateur dans l'environnement VR**
+
+![player](../figures/3d_setup_of_VR.png)
 
 ---
 
