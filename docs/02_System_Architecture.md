@@ -30,9 +30,10 @@ Chaque couche possède un rôle spécifique et communique avec les autres à tra
 
 > **Figure 1 — Architecture générale du système**
 
-<div align="center">
-  <img src="figures/HESTIM_logo.png" alt="HESTIM Logo">
-</div>
+<p align="center">
+  <img src="../Figures/HESTIM_logo.png" width="350">
+</p>
+
 ---
 
 # 3. Couche physique
