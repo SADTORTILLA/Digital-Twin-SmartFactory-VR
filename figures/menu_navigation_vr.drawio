@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="menu-navigation-vr" name="Menu Navigation VR">
+    <mxGraphModel dx="1373" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#38761d;fontStyle=1;" value="Menu principal" vertex="1">
+          <mxGeometry height="50" width="200" x="485" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Digital Twin" vertex="1">
+          <mxGeometry height="45" width="150" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="pedago" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;strokeColor=#666666;" value="Scénarios&lt;br&gt;pédagogiques" vertex="1">
+          <mxGeometry height="45" width="150" x="270" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="collab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;strokeColor=#666666;" value="Scénario&lt;br&gt;collaboratif" vertex="1">
+          <mxGeometry height="45" width="150" x="510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tutorial" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;strokeColor=#666666;" value="Tutoriel" vertex="1">
+          <mxGeometry height="45" width="150" x="750" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="close" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;strokeColor=#666666;" value="Fermer" vertex="1">
+          <mxGeometry height="45" width="150" x="940" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--6" edge="1" parent="1" source="dtScene" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);" target="backList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dtScene" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Scène&lt;br&gt;Digital Twin" vertex="1">
+          <mxGeometry height="50" width="150" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="list" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Liste des&lt;br&gt;scénarios" vertex="1">
+          <mxGeometry height="50" width="150" x="270" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--4" edge="1" parent="1" source="collabScene" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);" target="backList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="collabScene" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Scène&lt;br&gt;collaborative" vertex="1">
+          <mxGeometry height="50" width="150" x="510" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--5" edge="1" parent="1" source="tutorialScene" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);" target="backList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tutorialScene" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Scène&lt;br&gt;tutoriel" vertex="1">
+          <mxGeometry height="50" width="150" x="750" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="available" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;" value="Scénario&lt;br&gt;disponible" vertex="1">
+          <mxGeometry height="50" width="150" x="270" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="backList" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#e69138;" value="Retour&lt;br&gt;menu principal" vertex="1">
+          <mxGeometry height="50" width="150" x="450" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--8" edge="1" parent="1" source="prep" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);" target="backList">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prep" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Scène de&lt;br&gt;préparation" vertex="1">
+          <mxGeometry height="50" width="150" x="270" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;" value="Start" vertex="1">
+          <mxGeometry height="45" width="140" x="90" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="option" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#e69138;" value="Option" vertex="1">
+          <mxGeometry height="45" width="140" x="270" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="form" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Formulaire&lt;br&gt;démographique" vertex="1">
+          <mxGeometry height="50" width="140" x="90" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="volume" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#e69138;" value="Volume&lt;br&gt;audio cues" vertex="1">
+          <mxGeometry height="50" width="140" x="270" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--3" edge="1" parent="1" source="ready" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Z2R9lLENMIpRWg3Z9uG--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ready" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;strokeColor=#6aa84f;" value="Ready&lt;br&gt;démarrer" vertex="1">
+          <mxGeometry height="50" width="140" x="90" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-dt" edge="1" parent="1" source="main" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="dt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-pedago" edge="1" parent="1" source="main" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="pedago">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-collab" edge="1" parent="1" source="main" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="collab">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-tutorial" edge="1" parent="1" source="main" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="tutorial">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-main-close" edge="1" parent="1" source="main" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="close">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-dt-scene" edge="1" parent="1" source="dt" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="dtScene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-pedago-list" edge="1" parent="1" source="pedago" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="list">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-collab-scene" edge="1" parent="1" source="collab" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="collabScene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-tutorial-scene" edge="1" parent="1" source="tutorial" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="tutorialScene">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-list-available" edge="1" parent="1" source="list" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="available">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-list-back" edge="1" parent="1" source="list" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="backList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-available-prep" edge="1" parent="1" source="available" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="prep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prep-start" edge="1" parent="1" source="prep" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="start">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-prep-option" edge="1" parent="1" source="prep" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="option">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-start-form" edge="1" parent="1" source="start" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="form">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-form-ready" edge="1" parent="1" source="form" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="ready">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-option-volume" edge="1" parent="1" source="option" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" target="volume">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--7" edge="1" parent="1" source="Z2R9lLENMIpRWg3Z9uG--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#959595);" target="backList">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2R9lLENMIpRWg3Z9uG--1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#3c78d8;" value="Scène du Scénario&lt;br&gt;disponible" vertex="1">
+          <mxGeometry height="50" width="150" x="265" y="770" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

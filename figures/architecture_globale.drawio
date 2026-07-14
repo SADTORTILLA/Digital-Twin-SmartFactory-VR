@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="architecture-globale" name="Architecture globale du système">
+    <mxGraphModel dx="429" dy="253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1" value="Architecture globale du système" vertex="1">
+          <mxGeometry height="50" width="680" x="360" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zone_physical" parent="1" style="swimlane;html=1;startSize=34;rounded=1;whiteSpace=wrap;fillColor=#E0F2FE;strokeColor=#0284C7;fontSize=16;fontStyle=1" value="Mini-usine physique PEHD" vertex="1">
+          <mxGeometry height="430" width="280" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="line" parent="zone_physical" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Ligne de production&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Extrusion-soufflage&lt;br&gt;Étiquetage&lt;br&gt;Robot manipulateur&lt;br&gt;Remplissage&lt;br&gt;Bouchonnage&lt;br&gt;Contrôle qualité&lt;br&gt;Conditionnement / stockage&lt;/font&gt;" vertex="1">
+          <mxGeometry height="165" width="230" x="25" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="sensors" parent="zone_physical" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Capteurs et états machines&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Marche / arrêt&lt;br&gt;Présence produit&lt;br&gt;Valeurs capteurs&lt;br&gt;Alertes ou anomalies&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="230" x="25" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="esp32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontSize=14;fontStyle=1;spacing=8" value="ESP32&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Acquisition des données&lt;br&gt;Transmission réseau&lt;/font&gt;" vertex="1">
+          <mxGeometry height="95" width="210" x="385" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wifi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontSize=14;fontStyle=1" value="Réseau Wi-Fi" vertex="1">
+          <mxGeometry height="65" width="210" x="385" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zone_backend" parent="1" style="swimlane;html=1;startSize=34;rounded=1;whiteSpace=wrap;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=16;fontStyle=1" value="Couche communication et données" vertex="1">
+          <mxGeometry height="430" width="300" x="670" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fastapi" parent="zone_backend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Serveur FastAPI&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Réception des données ESP32&lt;br&gt;Traitement et structuration&lt;br&gt;Exposition API&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="240" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="zone_backend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="API de supervision&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;HTTP / WebSocket&lt;br&gt;États machines&lt;br&gt;Valeurs capteurs&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="240" x="30" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="zone_unity" parent="1" style="swimlane;html=1;startSize=34;rounded=1;whiteSpace=wrap;fillColor=#EDE9FE;strokeColor=#7C3AED;fontSize=16;fontStyle=1" value="Plateforme immersive Unity" vertex="1">
+          <mxGeometry height="620" width="330" x="1040" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dt" parent="zone_unity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Digital Twin de supervision&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Visualisation de l’état réel&lt;br&gt;Affichage des valeurs capteurs&lt;br&gt;Suivi des flux et anomalies&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="270" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="offline" parent="zone_unity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Scénarios pédagogiques hors ligne&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Mode solo&lt;br&gt;Exercices de formation&lt;br&gt;Évaluation des actions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="115" width="270" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="online" parent="zone_unity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#DC2626;dashed=1;fontSize=14;fontStyle=1;spacing=8" value="Scénario collaboratif en ligne&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Réservé à l’implantation&lt;br&gt;des systèmes de production&lt;br&gt;Synchronisation multi-utilisateur&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="270" x="30" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="vr" parent="zone_unity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#DB2777;fontSize=14;fontStyle=1;spacing=8" value="Interface VR&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Meta Quest 3&lt;br&gt;Interaction immersive&lt;br&gt;Tableaux de supervision&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="270" x="30" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#334155;fontSize=14;fontStyle=1;spacing=8" value="Utilisateurs&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Étudiant / Formateur / Superviseur&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="330" x="1040" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#2563EB;fontSize=14;align=left;spacing=12" value="Le Digital Twin connecté est destiné à la supervision des machines physiques à travers l’affichage des états et des valeurs capteurs. Les scénarios pédagogiques sont séparés de cette connexion : certains fonctionnent en mode solo hors ligne, tandis que le mode collaboratif en ligne est limité au scénario d’implantation des systèmes de production." vertex="1">
+          <mxGeometry height="100" width="900" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="zone_physical" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="esp32" value="États et&amp;nbsp;&lt;div&gt;capteurs&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="315" />
+              <mxPoint x="360" y="188" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="esp32" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="wifi" value="Données réseau">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="wifi" style="endArrow=block;html=1;rounded=0;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zone_backend" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="453" />
+              <mxPoint x="640" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="zone_backend" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dt" value="Données de&amp;nbsp;&lt;div&gt;supervision&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.016" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1000" y="315" />
+              <mxPoint x="1000" y="228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="vr" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" target="users" value="Expérience immersive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="offline" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=none;" target="users" value="Formation&amp;nbsp;&lt;div&gt;solo&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.3016" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1000" y="380" />
+              <mxPoint x="1000" y="580" />
+              <mxPoint x="970" y="580" />
+              <mxPoint x="970" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="online" style="endArrow=block;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#DC2626;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;" target="users" value="&lt;span&gt;Formation&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span&gt;Collaboration&lt;/span&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.558" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1020" y="528" />
+              <mxPoint x="1020" y="680" />
+              <mxPoint x="1020" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wi8r9fTySR0JZNGgJimk-1" edge="1" parent="1" source="dt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="users" value="supervisé">
+          <mxGeometry relative="1" x="-0.9094" y="-3" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

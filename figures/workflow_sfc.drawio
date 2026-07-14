@@ -1,0 +1,131 @@
+<mxfile host="app.diagrams.net" modified="2026-06-04T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="workflow-sfc" name="Workflow global SFC">
+    <mxGraphModel dx="1500" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Workflow global de la ligne de production SFC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=28;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="25" width="820" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="raw" value="Matière première&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Granulés PEHD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="50" y="180" width="180" height="85" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1" value="Poste 1&lt;br&gt;Extrusion - Soufflage&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Fabrication des flacons&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="290" y="160" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stock1" value="Stockage intermédiaire&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Flacons avec contrôle visuel&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;fontSize=14;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2" value="Poste 2&lt;br&gt;Étiquetage&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Opération manuelle / pédagogique&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="830" y="160" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="robot1" value="Robot manipulateur&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Transfert des flacons&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE9FE;strokeColor=#7C3AED;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="1100" y="160" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p3" value="Poste 3&lt;br&gt;Remplissage&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Dosage du produit&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="1100" y="390" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p4" value="Poste 4&lt;br&gt;Bouchonnage&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Fermeture des flacons&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#16A34A;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="830" y="390" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5" value="Poste 5&lt;br&gt;Contrôle qualité&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Vérification conformité&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="560" y="390" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6" value="Poste 6&lt;br&gt;Conditionnement&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Préparation des lots&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="290" y="390" width="210" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="stock_final" value="Stockage final&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Produits conformes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="50" y="390" width="180" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reject" value="Zone de rebut&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Flacons non conformes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#DC2626;fontSize=14;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="560" y="610" width="210" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="operator" value="Interventions opérateur&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Supervision, commandes, contrôle visuel,&lt;br&gt;manutention et opérations manuelles&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#DB2777;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="900" y="610" width="330" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="data" value="Données de supervision&lt;br&gt;&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;États machines, valeurs capteurs,&lt;br&gt;cadence, arrêts, anomalies&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2FE;strokeColor=#0284C7;fontSize=15;fontStyle=1;spacing=8" vertex="1" parent="1">
+          <mxGeometry x="1260" y="610" width="280" height="105" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" value="Granulés" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="raw" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Flacons produits" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p1" target="stock1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Flacons conformes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="stock1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Flacons étiquetés" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p2" target="robot1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Transfert" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="robot1" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="Flacons remplis" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p3" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="Flacons bouchés" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="Conformes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p5" target="p6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Lots conditionnés" style="endArrow=block;html=1;rounded=0;strokeWidth=2;fontSize=12" edge="1" parent="1" source="p6" target="stock_final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Non conformes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#DC2626;fontSize=12" edge="1" parent="1" source="p5" target="reject">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eo1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#DB2777" edge="1" parent="1" source="operator" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo2" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#DB2777" edge="1" parent="1" source="operator" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo3" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#DB2777" edge="1" parent="1" source="operator" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo4" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#DB2777" edge="1" parent="1" source="operator" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ed1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#0284C7" edge="1" parent="1" source="data" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed2" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#0284C7" edge="1" parent="1" source="data" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed3" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#0284C7" edge="1" parent="1" source="data" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend_flow" value="Trait plein : flux produit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="790" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_operator" value="Pointillé rose : intervention opérateur" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#DB2777" vertex="1" parent="1">
+          <mxGeometry x="50" y="820" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_data" value="Pointillé bleu : données de supervision" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#0284C7" vertex="1" parent="1">
+          <mxGeometry x="50" y="850" width="330" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
