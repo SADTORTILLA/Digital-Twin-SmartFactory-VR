@@ -22,6 +22,39 @@
 
 ---
 
+## 📖 Présentation
+
+Ce dépôt contient l'ensemble des développements réalisés durant un stage de fin d'études portant sur la conception d'un **Digital Twin immersif** d'une ligne de production de flacons en PEHD.
+
+Le projet a été développé au sein du laboratoire **H-FAB** de **HESTIM**, dans le cadre de la plateforme **Smart Factory Connected (SFC)**.
+
+L'objectif est de proposer un environnement de **Réalité Virtuelle (VR)** reproduisant fidèlement le fonctionnement d'une mini-usine industrielle afin de :
+
+- former des étudiants et opérateurs dans un environnement immersif ;
+- expérimenter des scénarios pédagogiques interactifs ;
+- superviser certaines données provenant du système physique en temps réel ;
+- servir de plateforme expérimentale pour des travaux de recherche en **Industrie 4.0**, **Digital Twin** et **formation immersive**.
+
+Le projet combine plusieurs domaines technologiques :
+
+- 🏭 Smart Factory
+- 🧩 Digital Twin
+- 🥽 Réalité Virtuelle
+- 🌐 Internet des Objets (IoT)
+- 🔄 Communication temps réel
+- 🎓 Formation immersive
+- 📊 Supervision industrielle
+
+---
+
+> **⚠️ Important**
+>
+> Ce dépôt ne constitue pas uniquement le code source du projet.
+>
+> Il a été conçu comme une **documentation technique complète** et un **support de transfert de connaissances** destiné aux futurs stagiaires, étudiants et chercheurs amenés à poursuivre le développement du Digital Twin de la Smart Factory de HESTIM.
+>
+> Avant toute modification du projet, il est fortement recommandé de consulter la documentation disponible dans le dossier **`docs/`**.
+
 ## 1. Getting Started (How to Run the Project)
 
 Follow these steps to get the project up and running in Unity and start the VR simulation. For a more detailed guide, see [docs/06_Installation.md](docs/06_Installation.md).
