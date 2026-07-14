@@ -1,0 +1,65 @@
+\begin{thebibliography}{}
+
+\bibitem[De~Lorenzis et~al., 2023]{DeLorenzis2023}
+De~Lorenzis, F., Prattic{\`o}, F.~G., Repetto, M., Pons, E., and Lamberti, F.
+  (2023).
+\newblock Immersive virtual reality for procedural training: Comparing
+  traditional and learning by teaching approaches.
+\newblock {\em Computers in Industry}, 144:103785.
+
+\bibitem[Garcia~Fracaro et~al., 2022]{Fracaro2022}
+Garcia~Fracaro, S., Glassey, J., Bernaerts, K., and Wilk, M. (2022).
+\newblock Immersive technologies for the training of operators in the process
+  industry: A systematic literature review.
+\newblock {\em Computers \& Chemical Engineering}, 160:107691.
+
+\bibitem[Hu et~al., 2021]{Hu2021}
+Hu, M., Luo, X., Chen, J., Lee, Y.~C., Zhou, Y., and Wu, D. (2021).
+\newblock Virtual reality: A survey of enabling technologies and its
+  applications in iot.
+\newblock arXiv:2103.06472.
+
+\bibitem[Jones et~al., 2020]{Jones2020}
+Jones, D., Snider, C., Nassehi, A., Yon, J., and Hicks, B. (2020).
+\newblock Characterising the digital twin: A systematic literature review.
+\newblock {\em CIRP Journal of Manufacturing Science and Technology},
+  29:36--52.
+
+\bibitem[Latoschik and Wienrich, 2021]{Latoschik2021}
+Latoschik, M.~E. and Wienrich, C. (2021).
+\newblock Congruence and plausibility, not presence?! pivotal conditions for xr
+  experiences and effects, a novel model.
+\newblock {\em Frontiers in Virtual Reality}, 2.
+
+\bibitem[Monetti et~al., 2022]{Monetti2022}
+Monetti, F.~M., de~Giorgio, A., Yu, H., Maffei, A., and Romero, M. (2022).
+\newblock An experimental study of the impact of virtual reality training on
+  manufacturing operators on industrial robotic tasks.
+\newblock {\em Procedia CIRP}, 106:33--38.
+
+\bibitem[Radianti et~al., 2020]{Radianti2020}
+Radianti, J., Majchrzak, T.~A., Fromm, J., and Wohlgenannt, I. (2020).
+\newblock A systematic review of immersive virtual reality applications for
+  higher education: Design elements, lessons learned, and research agenda.
+\newblock {\em Computers \& Education}, 147:103778.
+
+\bibitem[Rasheed et~al., 2020]{Rasheed2020}
+Rasheed, A., San, O., and Kvamsdal, T. (2020).
+\newblock Digital twin: Values, challenges and enablers from a modeling
+  perspective.
+\newblock {\em IEEE Access}, 8:21980--22012.
+
+\bibitem[Thelen et~al., 2022]{Thelen2022}
+Thelen, A., Zhang, X., Fink, O., Lu, Y., Ghosh, S., Youn, B.~D., Todd, M.~D.,
+  Mahadevan, S., Hu, C., and Hu, Z. (2022).
+\newblock A comprehensive review of digital twin -- part 1: Modeling and
+  twinning enabling technologies.
+\newblock {\em Structural and Multidisciplinary Optimization}, 65(12):354.
+
+\bibitem[Ud~Din et~al., 2024]{Din2024}
+Ud~Din, Z., Mohammadi, P., and Sherman, R. (2024).
+\newblock A systematic review and analysis of the viability of virtual reality
+  (vr) in construction work and education.
+\newblock arXiv:2408.01450.
+
+\end{thebibliography}

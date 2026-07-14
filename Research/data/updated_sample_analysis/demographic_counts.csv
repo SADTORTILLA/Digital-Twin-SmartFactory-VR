@@ -1,0 +1,7 @@
+variable,level,n,percent
+Gender,Male,10,83.33333333333333
+Gender,Female,2,16.666666666666668
+Program,Industrial Engineering,7,58.333333333333336
+Program,Computer Engineering,5,41.666666666666664
+FirstTimeVR,True,10,83.33333333333333
+FirstTimeVR,False,2,16.666666666666668

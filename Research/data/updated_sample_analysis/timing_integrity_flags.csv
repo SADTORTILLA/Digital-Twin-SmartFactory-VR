@@ -1,0 +1,6 @@
+pid,Participant,Condition,ChronologicalSession,SourceRow,TotalTimeSeconds,StepTimeSum,TimeStepDiff
+P2,FONA,Autonomous,2,6,56.558,51.558,5.0
+P5,IBRAHIME,Guided,1,17,122.237,119.237,3.0
+P5,IBRAHIME,Autonomous,2,18,71.611,68.61099999999999,3.000000000000014
+P10,Zineb,Autonomous,2,33,107.318,98.329,8.989000000000004
+P10,Zineb,Guided,3,34,89.247,74.25699999999999,14.990000000000009

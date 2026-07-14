@@ -1,0 +1,45 @@
+﻿column_group,column_name,type,scale,interpretation
+Participant,Identifiant participant,short answer,text,Only typed field; joins Google Form responses with Unity records
+Session repeated block,Session 1 - Guidée,section,page,Subjective ratings for guided session
+Session repeated block,Session 2 - Autonome,section,page,Subjective ratings for autonomous session
+Session repeated block,Session 3 - Test de stress,section,page,Subjective ratings for stress-test session
+NASA-TLX,Mental demand,grid score,0-10,Higher means greater mental workload
+NASA-TLX,Physical demand,grid score,0-10,Higher means greater physical workload
+NASA-TLX,Temporal demand,grid score,0-10,Higher means greater time pressure
+NASA-TLX,Effort,grid score,0-10,Higher means greater effort
+NASA-TLX,Frustration,grid score,0-10,Higher means greater frustration
+NASA-TLX,Perceived performance,grid score,0-10,Higher means better perceived performance
+Computed,Workload score,average per session,0-10,Average of mental physical temporal effort frustration
+Learning,I clearly understood what I had to do during this session.,grid score,1-5,Higher means better procedural clarity
+Learning,I remembered the correct order of the labeling procedure.,grid score,1-5,Higher means better sequence memory
+Learning,I felt confident while performing the task.,grid score,1-5,Higher means greater confidence
+Learning,I felt able to correct myself after a mistake.,grid score,1-5,Higher means better self-correction
+Learning,I felt autonomous during this session.,grid score,1-5,Higher means greater autonomy
+Learning,This session helped me progress in learning the labeling task.,grid score,1-5,Higher means stronger perceived learning
+Computed,Learning/autonomy score,average per session,1-5,Average of learning confidence autonomy items
+Presence,I had the feeling of being present in the virtual workstation.,grid score,1-7,Higher means stronger presence
+Presence,The virtual environment felt coherent.,grid score,1-7,Higher means stronger coherence
+Presence,The labeling workstation felt realistic.,grid score,1-7,Higher means stronger realism
+Presence,The interactions felt natural.,grid score,1-7,Higher means better interaction naturalness
+Presence,I felt immersed in the task.,grid score,1-7,Higher means stronger immersion
+Computed,Presence/realism score,average per session,1-7,Average of presence and realism items
+Comfort,Eye strain,grid score,0-3,Higher means worse symptom
+Comfort,Dizziness,grid score,0-3,Higher means worse symptom
+Comfort,Nausea,grid score,0-3,Higher means worse symptom
+Comfort,Headache,grid score,0-3,Higher means worse symptom
+Comfort,Hand or arm fatigue,grid score,0-3,Higher means worse symptom
+Comfort,General discomfort,grid score,0-3,Higher means worse symptom
+Computed,Comfort symptom score,average per session,0-3,Average of comfort symptom items
+Guidance/adaptation,The available guidance was useful for performing the task.,grid score,1-5,Higher means guidance was perceived useful
+Guidance/adaptation,I knew what to do even when guidance was limited or absent.,grid score,1-5,Higher means stronger autonomous understanding
+Guidance/adaptation,I stayed calm during the session.,grid score,1-5,Higher means better emotional control
+Guidance/adaptation,I adapted well when the situation became more difficult.,grid score,1-5,Higher means better perceived adaptation
+Guidance/adaptation,I felt in control of my actions.,grid score,1-5,Higher means better perceived control
+Guidance/adaptation,The session felt stressful.,grid score,1-5,Higher means greater perceived stress
+Computed,Guidance/adaptation score,average per session,1-5,Average of first five guidance/adaptation items
+Computed,Stress rating,single item per session,1-5,Stress item interpreted separately
+Overall,Overall usefulness of this session for learning.,grid score,1-5,Higher means greater usefulness
+Overall,Overall satisfaction with this session.,grid score,1-5,Higher means greater satisfaction
+Overall,Motivation to continue training with this VR system.,grid score,1-5,Higher means greater motivation
+Computed,Overall acceptance score,average per session,1-5,Average of usefulness satisfaction motivation
+

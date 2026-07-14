@@ -1,0 +1,27 @@
+test,view,metric,comparison,n,statistic,p,effect,effect_label,mean_delta,median_delta
+Friedman,chronological,TotalTimeSeconds,all three,12,12.666666666666657,0.001776103545734387,0.5277777777777773,Kendall_W,,
+Wilcoxon exact signed-rank,chronological,TotalTimeSeconds,Run 1 -> Run 2,12,3.0,0.00244140625,-0.9230769230769231,rank_biserial_delta_positive_means_second_higher,-35.49333333333334,-38.539500000000004
+Wilcoxon exact signed-rank,chronological,TotalTimeSeconds,Run 1 -> Run 3,12,0.0,0.00048828125,-1.0,rank_biserial_delta_positive_means_second_higher,-33.525666666666666,-27.716
+Wilcoxon exact signed-rank,chronological,TotalTimeSeconds,Run 2 -> Run 3,12,33.0,0.67724609375,0.15384615384615385,rank_biserial_delta_positive_means_second_higher,1.967666666666667,-0.6620000000000008
+Friedman,chronological,FalseGrabsTotal,all three,12,2.041666666666657,0.36029456956140654,0.08506944444444405,Kendall_W,,
+Wilcoxon exact signed-rank,chronological,FalseGrabsTotal,Run 1 -> Run 2,10,22.5,0.6640625,-0.18181818181818182,rank_biserial_delta_positive_means_second_higher,-2.6666666666666665,0.0
+Wilcoxon exact signed-rank,chronological,FalseGrabsTotal,Run 1 -> Run 3,9,8.5,0.1015625,-0.6222222222222222,rank_biserial_delta_positive_means_second_higher,-3.4166666666666665,-1.5
+Wilcoxon exact signed-rank,chronological,FalseGrabsTotal,Run 2 -> Run 3,9,12.0,0.265625,-0.4666666666666667,rank_biserial_delta_positive_means_second_higher,-0.75,-0.5
+Friedman,condition_objective,TotalTimeSeconds,all three,12,1.5,0.4723665527410147,0.0625,Kendall_W,,
+Wilcoxon exact signed-rank,condition_objective,TotalTimeSeconds,Guided -> Autonomous,12,29.0,0.4697265625,0.2564102564102564,rank_biserial_delta_positive_means_second_higher,6.140083333333334,6.596499999999995
+Wilcoxon exact signed-rank,condition_objective,TotalTimeSeconds,Guided -> Stress,12,26.0,0.33935546875,0.3333333333333333,rank_biserial_delta_positive_means_second_higher,10.754666666666667,10.712499999999999
+Wilcoxon exact signed-rank,condition_objective,TotalTimeSeconds,Autonomous -> Stress,12,35.0,0.791015625,0.10256410256410256,rank_biserial_delta_positive_means_second_higher,4.614583333333333,11.018500000000001
+Friedman,condition_objective,FalseGrabsTotal,all three,12,0.04166666666665719,0.9793821813312448,0.0017361111111107164,Kendall_W,,
+Wilcoxon exact signed-rank,condition_objective,FalseGrabsTotal,Guided -> Autonomous,10,23.0,0.724609375,-0.16363636363636364,rank_biserial_delta_positive_means_second_higher,-0.25,0.0
+Wilcoxon exact signed-rank,condition_objective,FalseGrabsTotal,Guided -> Stress,9,21.0,0.9140625,0.06666666666666667,rank_biserial_delta_positive_means_second_higher,2.4166666666666665,0.0
+Wilcoxon exact signed-rank,condition_objective,FalseGrabsTotal,Autonomous -> Stress,9,16.0,0.46875,0.28888888888888886,rank_biserial_delta_positive_means_second_higher,2.6666666666666665,0.0
+Friedman,condition_subjective,Workload,all three,12,3.375,0.18498139990730428,0.140625,Kendall_W,,
+Friedman,condition_subjective,PerceivedPerformance,all three,12,1.2916666666666572,0.5242255054454068,0.05381944444444405,Kendall_W,,
+Friedman,condition_subjective,LearningAutonomy,all three,12,9.041666666666657,0.010879953262024997,0.3767361111111107,Kendall_W,,
+Friedman,condition_subjective,PresenceRealism,all three,12,3.791666666666657,0.15019312194656675,0.15798611111111072,Kendall_W,,
+Friedman,condition_subjective,ComfortSymptoms,all three,12,0.2916666666666572,0.8643017414713681,0.012152777777777382,Kendall_W,,
+Friedman,condition_subjective,GuidanceAdaptation,all three,12,5.291666666666657,0.07094620725931058,0.22048611111111072,Kendall_W,,
+Friedman,condition_subjective,StressRating,all three,12,0.2916666666666572,0.8643017414713681,0.012152777777777382,Kendall_W,,
+Friedman,condition_subjective,Acceptance,all three,12,3.291666666666657,0.19285178599107317,0.13715277777777737,Kendall_W,,
+Spearman exact permutation,participant_average,PresenceRealism vs FalseGrabsTotal,H3 independence-preserving participant averages,12,-0.08215124035022121,0.7963120368796313,-0.08215124035022121,rho,,
+Spearman exact permutation,participant_average,PresenceRealism vs TotalTimeSeconds,exploratory participant averages,12,-0.12457488265483779,0.6978130218697813,-0.12457488265483779,rho,,

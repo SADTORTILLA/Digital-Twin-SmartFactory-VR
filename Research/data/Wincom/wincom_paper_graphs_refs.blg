@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: wincom_paper_graphs_refs.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: wincom_paper.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 20 entries,
+            4087 wiz_defined-function locations,
+            955 strings with 11684 characters,
+and the built_in function-call counts, 16117 in all, are:
+= -- 1336
+> -- 452
+< -- 129
++ -- 250
+- -- 101
+* -- 790
+:= -- 2400
+add.period$ -- 39
+call.type$ -- 20
+change.case$ -- 19
+chr.to.int$ -- 267
+cite$ -- 20
+duplicate$ -- 1178
+empty$ -- 1141
+format.name$ -- 104
+if$ -- 3730
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 213
+newline$ -- 87
+num.names$ -- 19
+pop$ -- 482
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1249
+stack$ -- 0
+substring$ -- 683
+swap$ -- 1011
+text.length$ -- 40
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 20
+warning$ -- 0
+while$ -- 60
+width$ -- 22
+write$ -- 227

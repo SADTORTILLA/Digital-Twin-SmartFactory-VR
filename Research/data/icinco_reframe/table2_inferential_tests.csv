@@ -1,0 +1,30 @@
+Hypothesis_family,Endpoint,Contrast,Test,n,Statistic,p_raw,Effect_size,Effect_size_label,Mean_delta,Median_delta,Cohen_dz,p_holm_within_family
+Objective performance,TotalTimeSeconds,Chronological run: omnibus,Friedman rank test,12,12.666666666666657,0.001776103545734387,0.5277777777777773,Kendall W,,,,
+Objective performance,TotalTimeSeconds,Chronological run: Run 1 vs Run 2,Exact Wilcoxon signed-rank,12,3.0,0.00244140625,-0.9230769230769231,rank-biserial r,-35.49333333333334,-38.539500000000004,-1.382190444538084,0.0048828125
+Objective performance,TotalTimeSeconds,Chronological run: Run 1 vs Run 3,Exact Wilcoxon signed-rank,12,0.0,0.00048828125,-1.0,rank-biserial r,-33.525666666666666,-27.716,-2.143469728427297,0.00146484375
+Objective performance,TotalTimeSeconds,Chronological run: Run 2 vs Run 3,Exact Wilcoxon signed-rank,12,33.0,0.67724609375,0.15384615384615385,rank-biserial r,1.967666666666667,-0.6620000000000008,0.07343052698476883,0.67724609375
+Objective performance,FalseGrabsTotal,Chronological run: omnibus,Friedman rank test,12,2.041666666666657,0.36029456956140654,0.08506944444444405,Kendall W,,,,
+Objective performance,FalseGrabsTotal,Chronological run: Run 1 vs Run 2,Exact Wilcoxon signed-rank,10,22.5,0.6640625,-0.18181818181818182,rank-biserial r,-2.6666666666666665,0.0,-0.3608679470051762,0.6640625
+Objective performance,FalseGrabsTotal,Chronological run: Run 1 vs Run 3,Exact Wilcoxon signed-rank,9,8.5,0.1015625,-0.6222222222222222,rank-biserial r,-3.4166666666666665,-1.5,-0.46537400862980643,0.3046875
+Objective performance,FalseGrabsTotal,Chronological run: Run 2 vs Run 3,Exact Wilcoxon signed-rank,9,12.0,0.265625,-0.4666666666666667,rank-biserial r,-0.75,-0.5,-0.3739391775069527,0.53125
+Objective performance,TotalTimeSeconds,Scene condition: omnibus,Friedman rank test,12,1.5,0.4723665527410147,0.0625,Kendall W,,,,
+Objective performance,TotalTimeSeconds,Scene condition: Guided vs Autonomous,Exact Wilcoxon signed-rank,12,29.0,0.4697265625,0.2564102564102564,rank-biserial r,6.140083333333334,6.596499999999995,0.18089555475359564,1.0
+Objective performance,TotalTimeSeconds,Scene condition: Guided vs Stress,Exact Wilcoxon signed-rank,12,26.0,0.33935546875,0.3333333333333333,rank-biserial r,10.754666666666667,10.712499999999999,0.25831150128624314,1.0
+Objective performance,TotalTimeSeconds,Scene condition: Autonomous vs Stress,Exact Wilcoxon signed-rank,12,35.0,0.791015625,0.10256410256410256,rank-biserial r,4.614583333333333,11.018500000000001,0.13603565152216643,1.0
+Objective performance,FalseGrabsTotal,Scene condition: omnibus,Friedman rank test,12,0.04166666666665719,0.9793821813312448,0.0017361111111107164,Kendall W,,,,
+Objective performance,FalseGrabsTotal,Scene condition: Guided vs Autonomous,Exact Wilcoxon signed-rank,10,23.0,0.724609375,-0.16363636363636364,rank-biserial r,-0.25,0.0,-0.14167918937066915,1.0
+Objective performance,FalseGrabsTotal,Scene condition: Guided vs Stress,Exact Wilcoxon signed-rank,9,21.0,0.9140625,0.06666666666666667,rank-biserial r,2.4166666666666665,0.0,0.3018868563477781,1.0
+Objective performance,FalseGrabsTotal,Scene condition: Autonomous vs Stress,Exact Wilcoxon signed-rank,9,16.0,0.46875,0.28888888888888886,rank-biserial r,2.6666666666666665,0.0,0.36894112819141256,1.0
+Subjective experience,Workload,Condition omnibus,Friedman rank test,12,3.375,0.18498139990730428,0.140625,Kendall W,,,,
+Subjective experience,PerceivedPerformance,Condition omnibus,Friedman rank test,12,1.2916666666666572,0.5242255054454068,0.05381944444444405,Kendall W,,,,
+Subjective experience,LearningAutonomy,Condition omnibus,Friedman rank test,12,9.041666666666657,0.010879953262024997,0.3767361111111107,Kendall W,,,,
+Subjective experience,PresenceRealism,Condition omnibus,Friedman rank test,12,3.791666666666657,0.15019312194656675,0.15798611111111072,Kendall W,,,,
+Subjective experience,ComfortSymptoms,Condition omnibus,Friedman rank test,12,0.2916666666666572,0.8643017414713681,0.012152777777777382,Kendall W,,,,
+Subjective experience,GuidanceAdaptation,Condition omnibus,Friedman rank test,12,5.291666666666657,0.07094620725931058,0.22048611111111072,Kendall W,,,,
+Subjective experience,StressRating,Condition omnibus,Friedman rank test,12,0.2916666666666572,0.8643017414713681,0.012152777777777382,Kendall W,,,,
+Subjective experience,Acceptance,Condition omnibus,Friedman rank test,12,3.291666666666657,0.19285178599107317,0.13715277777777737,Kendall W,,,,
+Feasibility thresholds,Acceptance,Acceptance above high-feasibility threshold (4/5),"Exact one-sample signed-rank, H1=greater",11,66.0,0.00048828125,0.8518518518518521,mean-threshold,0.8518518518518521,1.0,,
+Feasibility thresholds,PresenceRealism,Presence/realism above high-presence threshold (5/7),"Exact one-sample signed-rank, H1=greater",12,78.0,0.000244140625,1.5055555555555555,mean-threshold,1.5055555555555555,1.5,,
+Feasibility thresholds,ComfortSymptoms,Symptoms below mild threshold (1/3),"Exact one-sample signed-rank, H1=less",12,2.0,0.000732421875,-0.6157407407407407,mean-threshold,-0.6157407407407407,-0.6944444444444444,,
+Exploratory construct validity,PresenceRealism vs FalseGrabsTotal,Participant-average Spearman correlation,Exact permutation Spearman,12,-0.08215124035022121,0.7963120368796313,-0.08215124035022121,Spearman rho,,,,
+Exploratory construct validity,PresenceRealism vs TotalTimeSeconds,Participant-average Spearman correlation,Exact permutation Spearman,12,-0.12457488265483779,0.6978130218697813,-0.12457488265483779,Spearman rho,,,,
