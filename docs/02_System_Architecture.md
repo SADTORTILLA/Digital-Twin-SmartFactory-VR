@@ -30,7 +30,7 @@ Chaque couche possède un rôle spécifique et communique avec les autres à tra
 
 > **Figure 1 — Architecture générale du système**
 
-![Architecture globale](./figures/architecture_globale.drawio.png)
+![Architecture globale](../figures/architecture_globale.drawio.png)
 
 ---
 
