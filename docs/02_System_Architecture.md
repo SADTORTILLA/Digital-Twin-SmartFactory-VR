@@ -30,33 +30,7 @@ Chaque couche possède un rôle spécifique et communique avec les autres à tra
 
 > **Figure 1 — Architecture générale du système**
 
-*(Insérer ici un diagramme complet de l'architecture.)*
-
-```
-                ┌────────────────────────────┐
-                │     Smart Factory (SFC)    │
-                └─────────────┬──────────────┘
-                              │
-                              ▼
-                     ESP32 Acquisition
-                              │
-                         HTTP / WiFi
-                              │
-                              ▼
-                    FastAPI Backend Server
-                              │
-                      WebSocket / HTTP
-                              │
-                              ▼
-                    Unity Digital Twin
-                              │
-                ┌─────────────┴──────────────┐
-                ▼                            ▼
-          VR Environment              User Interface
-                │
-                ▼
-          Meta Quest 3
-```
+![SFC Virtual Environment](figures/architecture_globale.drawio.png)
 
 ---
 
