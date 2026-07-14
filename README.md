@@ -57,55 +57,40 @@ Le projet combine plusieurs domaines technologiques :
 
 # 📚 Documentation
 
-Ce dépôt est accompagné d'une documentation technique détaillée située dans le dossier **`docs/`**. Elle a été rédigée afin de faciliter la prise en main du projet, d'expliquer les choix techniques réalisés et d'accompagner les futurs stagiaires dans la poursuite du développement.
+Afin de faciliter la prise en main du projet et d'assurer une continuité de son développement, une documentation technique détaillée est disponible dans le dossier **`docs/`**.
 
-## Ordre de lecture recommandé
-
-Pour une compréhension progressive du projet, il est conseillé de consulter les documents dans l'ordre suivant :
+Chaque document répond à un objectif précis et il est recommandé de les consulter dans l'ordre indiqué ci-dessous.
 
 | Document | Description |
 |----------|-------------|
-| 📄 **01_Project_Overview.md** | Présentation générale du projet, contexte, objectifs et fonctionnement global. |
-| 📄 **02_System_Architecture.md** | Architecture complète du système, flux de données et interactions entre les différents composants. |
-| 📄 **03_Unity_Architecture.md** | Organisation du projet Unity, structure des scènes, scripts, prefabs et logique de développement. |
-| 📄 **04_FastAPI.md** | Documentation du serveur FastAPI, des API REST/WebSocket et des échanges de données avec Unity. |
-| 📄 **05_ESP32.md** | Configuration matérielle, fonctionnement de l'ESP32, acquisition des données et communication avec le serveur. |
-| 📄 **06_Installation.md** | Guide complet d'installation de l'environnement de développement et d'exécution du projet. |
-| 📄 **07_Educational_Scenarios.md** | Description détaillée des scénarios pédagogiques développés et des scénarios prévus. |
-| 📄 **08_Roadmap.md** | État d'avancement du projet, fonctionnalités restantes et feuille de route. |
-| 📄 **09_Troubleshooting.md** | Solutions aux problèmes les plus fréquents rencontrés lors du développement ou de l'installation. |
-| 📄 **10_Research.md** | Présentation des travaux de recherche associés au projet, des expérimentations et des publications. |
-| 📄 **11_Guide_For_Next_Intern.md** | Guide de reprise du projet destiné au prochain stagiaire, avec les étapes recommandées pour poursuivre le développement. |
+| 📄 [`docs/01_Project_Overview.md`](docs/01_Project_Overview.md) | Présentation générale du projet, contexte, objectifs et fonctionnement global. |
+| 📄 [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md) | Architecture globale du système, flux de données et interactions entre les composants matériels et logiciels. |
+| 📄 [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md) | Organisation du projet Unity, structure des scènes, scripts, prefabs, interactions VR et architecture logicielle. |
+| 📄 [`docs/04_FastAPI.md`](docs/04_FastAPI.md) | Documentation du serveur FastAPI, architecture du backend, API REST/WebSocket et communication avec Unity. |
+| 📄 [`docs/05_ESP32.md`](docs/05_ESP32.md) | Fonctionnement de l'ESP32, acquisition des données, configuration matérielle et communication réseau. |
+| 📄 [`docs/06_Installation.md`](docs/06_Installation.md) | Guide complet d'installation de l'environnement de développement et de mise en route du projet. |
+| 📄 [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md) | Description des scénarios pédagogiques implémentés, des objectifs d'apprentissage et des scénarios prévus. |
+| 📄 [`docs/08_Roadmap.md`](docs/08_Roadmap.md) | État d'avancement du projet, fonctionnalités restantes, améliorations envisagées et plan de développement. |
+| 📄 [`docs/09_Troubleshooting.md`](docs/09_Troubleshooting.md) | Résolution des problèmes les plus fréquents rencontrés lors de l'installation ou du développement. |
+| 📄 [`docs/10_Research.md`](docs/10_Research.md) | Présentation des travaux de recherche associés au projet, des expérimentations et des publications scientifiques. |
+| 📄 [`docs/11_Guide_For_Next_Intern.md`](docs/11_Guide_For_Next_Intern.md) | Guide de reprise du projet destiné au prochain stagiaire, avec les recommandations pour poursuivre le développement. |
 
 ---
 
-## 🎯 À qui s'adresse cette documentation ?
+## 📖 Ordre de lecture recommandé
 
-Cette documentation est destinée à plusieurs profils :
+Pour une prise en main efficace, il est conseillé de suivre l'ordre suivant :
 
-- **Futurs stagiaires** souhaitant poursuivre le développement du Digital Twin.
-- **Étudiants** utilisant la Smart Factory dans un cadre pédagogique.
-- **Enseignants et encadrants** désirant comprendre l'architecture du projet.
-- **Chercheurs** travaillant sur les Digital Twins, la Réalité Virtuelle ou l'Industrie 4.0.
-- **Développeurs** souhaitant améliorer ou étendre les fonctionnalités existantes.
+1. `README.md`
+2. `docs/01_Project_Overview.md`
+3. `docs/02_System_Architecture.md`
+4. `docs/03_Unity_Architecture.md`
+5. `docs/06_Installation.md`
+6. `docs/07_Educational_Scenarios.md`
+7. `docs/08_Roadmap.md`
+8. `docs/11_Guide_For_Next_Intern.md`
 
----
-
-## 🚀 Première prise en main
-
-Si vous découvrez le projet pour la première fois, il est recommandé de suivre les étapes suivantes :
-
-1. Lire cette page (`README.md`) afin de comprendre les objectifs du projet.
-2. Consulter **01_Project_Overview.md** pour découvrir le contexte général.
-3. Étudier **02_System_Architecture.md** afin de comprendre les échanges entre les différents composants.
-4. Lire **03_Unity_Architecture.md** pour se familiariser avec l'organisation du projet Unity.
-5. Suivre **06_Installation.md** pour installer l'environnement de développement.
-6. Tester le scénario pédagogique actuellement implémenté.
-7. Consulter **08_Roadmap.md** et **11_Guide_For_Next_Intern.md** avant de commencer un nouveau développement.
-
-> **💡 Conseil**
->
-> Avant de modifier le code, prenez le temps de comprendre l'architecture générale du système. Le projet est composé de plusieurs sous-systèmes (Unity, ESP32, FastAPI et Smart Factory) qui interagissent entre eux. Une bonne compréhension de cette architecture facilitera grandement les développements futurs.
+> 💡 **Conseil :** Avant de commencer le développement, prenez le temps de comprendre l'architecture générale du système. Cette étape vous permettra de mieux appréhender les interactions entre Unity, FastAPI, l'ESP32 et la Smart Factory, et facilitera l'ajout de nouvelles fonctionnalités.
 
 
 
