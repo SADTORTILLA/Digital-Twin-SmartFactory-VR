@@ -54,6 +54,8 @@ Ces équipements produisent les informations qui seront progressivement intégr�
 
 > **Figure 2 — Photo annotée de la Smart Factory**
 
+![Smart factory](../figures/positionnement%20des%20équipements%20de%20production.png)
+
 ---
 
 # 4. Couche d'acquisition
