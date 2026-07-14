@@ -30,9 +30,7 @@ Chaque couche possède un rôle spécifique et communique avec les autres à tra
 
 > **Figure 1 — Architecture générale du système**
 
-<p align="center">
-  <img src="../Figures/HESTIM_logo.png" width="350">
-</p>
+![Architecture globale](figures/architecture_globale.drawio.png)
 
 ---
 
