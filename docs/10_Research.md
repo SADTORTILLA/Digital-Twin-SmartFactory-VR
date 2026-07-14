@@ -90,31 +90,23 @@ Ces fichiers peuvent ensuite être importés dans des outils d'analyse statistiq
 
 Le projet sert actuellement de support à deux travaux de recherche en cours de rédaction.
 
-## Article 1 — ICINCO
+## Publications scientifiques
 
-Ce premier article présente principalement l'architecture logicielle du système, le Digital Twin immersif ainsi que le protocole expérimental mis en place pour l'évaluation du scénario pédagogique.
+Deux articles scientifiques sont actuellement en cours de développement.
 
-Le manuscrit est disponible dans :
+### Article ICINCO
 
-```
-Research/
-└── icinco_paper/
-```
+Cet article présente l'architecture du Digital Twin immersif, les scénarios pédagogiques et le protocole expérimental.
+
+➡️ **Consulter le dossier :** [Research/icinco_paper](../Research/icinco_paper/)
 
 ---
 
-## Article 2 — WINCOM
+### Article WINCOM
 
-Le second article s'intéresse aux expérimentations réalisées sur la plateforme ainsi qu'à l'analyse des performances des utilisateurs dans les scénarios immersifs.
+Cet article porte sur l'analyse expérimentale des performances des utilisateurs dans les scénarios immersifs.
 
-Le manuscrit est disponible dans :
-
-```
-Research/
-└── Wincom/
-```
-
-Ces deux travaux sont encore en cours de développement et évolueront au fur et à mesure de l'avancement du projet.
+➡️ **Consulter le dossier :** [Research/Wincom](../Research/Wincom/)
 
 ---
 
