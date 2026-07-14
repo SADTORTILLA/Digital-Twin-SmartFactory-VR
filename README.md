@@ -92,141 +92,279 @@ Pour une prise en main efficace, il est conseillé de suivre l'ordre suivant :
 
 > 💡 **Conseil :** Avant de commencer le développement, prenez le temps de comprendre l'architecture générale du système. Cette étape vous permettra de mieux appréhender les interactions entre Unity, FastAPI, l'ESP32 et la Smart Factory, et facilitera l'ajout de nouvelles fonctionnalités.
 
+# 🏭 Vue d'ensemble du projet
 
+Ce projet a été développé dans le cadre d'un stage de fin d'études réalisé au sein du laboratoire **H-FAB** de **HESTIM Engineering & Business School**, sur la plateforme **Smart Factory Connected (SFC)**.
 
+Il consiste à concevoir un **Digital Twin immersif** d'une ligne de production de flacons en **PEHD (Polyéthylène Haute Densité)**, en reproduisant fidèlement l'environnement industriel dans un espace de Réalité Virtuelle (VR).
 
+L'objectif principal est de proposer une plateforme immersive permettant à la fois :
 
+- la **formation des étudiants et des opérateurs** à travers des scénarios pédagogiques interactifs ;
+- la **visualisation de données provenant de la ligne de production réelle** grâce à une architecture de communication temps réel ;
+- l'**expérimentation de nouveaux scénarios industriels** dans un environnement sécurisé ;
+- le développement d'une plateforme évolutive pouvant servir de support à de futurs travaux de recherche sur les **Digital Twins**, l'**Industrie 4.0** et les **technologies immersives**.
 
+Contrairement à une simple simulation 3D, ce projet vise à établir un lien entre une installation physique et sa représentation virtuelle grâce à une chaîne de communication composée d'un **ESP32**, d'un serveur **FastAPI** et d'une application développée sous **Unity Engine 6**.
 
+À ce stade du développement, une première synchronisation temps réel a été mise en œuvre afin de transmettre certaines informations issues de la mini-usine vers le Digital Twin. Cette architecture a été conçue pour être progressivement enrichie avec de nouvelles données et de nouvelles fonctionnalités.
 
-
-
-## 1. Getting Started (How to Run the Project)
-
-Follow these steps to get the project up and running in Unity and start the VR simulation. For a more detailed guide, see [docs/06_Installation.md](docs/06_Installation.md).
-
-### Step 1: Open the Project in Unity
-1. Install **Unity 6** with Android/OpenXR build support.
-2. Open **Unity Hub**, click **Add**, and select the root folder of this repository (which contains the `Assets`, `Packages`, and `ProjectSettings` folders).
-3. Wait for Unity to import the assets and resolve dependencies (this may take a few minutes the first time).
-4. In the Project window, navigate to your scenes folder (e.g., `Assets/Scenes/`) and open the main menu scene or `MAIN_scene`.
-
-### Step 2: Run the VR Application
-1. Ensure your **Meta Quest 3** is connected to your PC via Quest Link or Air Link.
-2. Verify that **OpenXR** is set as the active runtime in your Oculus app and Unity Project Settings.
-3. Press the **Play** button in the Unity Editor. You will see the main menu and can navigate to the scenarios:
-
-![Main Menu](figures/Menu_principale.png)
-
-### Step 3: Start the Backend (Optional for IoT Data)
-If you want to test the connected supervision (IoT Pipeline):
-1. Navigate to the `FastAPI` directory in your terminal.
-2. Install Python dependencies: `pip install -r requirements.txt`
-3. Start the server: `uvicorn main:app --host 0.0.0.0 --port 8000`
-4. The Unity app will automatically attempt to connect to this server via WebSocket to retrieve machine states.
+Le projet constitue également un support expérimental pour plusieurs travaux de recherche portant sur l'apprentissage immersif, l'évaluation des performances des utilisateurs et l'intégration des technologies XR dans les environnements industriels.
 
 ---
 
-## 2. Project Overview
+## 🎯 Fonctionnalités principales
 
-This repository contains the complete development of an immersive Digital Twin of a PEHD (High-Density Polyethylene) bottle production line, developed within the Smart Factory Connected (SFC) at the H-FAB laboratory of HESTIM. 
+Le projet comprend actuellement les fonctionnalités suivantes :
 
-The primary goal of this project is to bridge the gap between physical industrial systems and immersive virtual reality by creating a platform that serves both as an **educational training tool** and as a **proof of concept for connected industrial supervision**. 
+- ✅ Modélisation 3D complète de la Smart Factory.
+- ✅ Intégration des équipements industriels dans Unity.
+- ✅ Développement d'un environnement immersif compatible avec **Meta Quest 3**.
+- ✅ Simulation du fonctionnement de la ligne de production.
+- ✅ Architecture de communication **ESP32 → FastAPI → Unity**.
+- ✅ Visualisation temps réel de données provenant du système physique.
+- ✅ Scénario pédagogique d'étiquetage chronométré.
+- ✅ Collecte de données expérimentales pour l'évaluation des utilisateurs.
 
-Unlike a standard 3D simulation, this environment is built to be a true Digital Twin. It incorporates an IoT data pipeline that connects the physical factory to the Unity VR environment in real-time, starting with the extrusion-blow molding machine's temperature.
+Les développements futurs prévoient notamment :
 
----
-
-## 3. Project Objectives
-
-The project is driven by the need to safely and effectively train students and operators on complex Industry 4.0 systems, while also addressing the challenges of physical machine availability. The core objectives are:
-
-### General Objective
-To develop an immersive Digital Twin of the HESTIM Smart Factory PEHD bottle production line, providing a pedagogical simulation platform and a first proof of concept for VR-based connected supervision.
-
-### Specific Objectives
-*   **3D Modeling & Virtual Environment:** Create highly accurate, optimized 3D representations of the industrial equipment (using CATIA V5, FreeCAD, and Blender) and assemble a faithful VR replica of the factory in Unity.
-*   **Machine Logic & Animation:** Develop the functional behaviors, physics, and animations for each workstation to reflect the real-world manufacturing flow.
-*   **Pedagogical Scenarios:** Implement structured, offline VR training scenarios—specifically a timed labeling task—to evaluate user performance, learning progression, and the effectiveness of progressive VR guidance.
-*   **Connected Supervision (IoT Pipeline):** Design and implement a robust communication architecture using ESP32 microcontrollers to capture physical machine data, a FastAPI server to process it, and Unity to visualize it in real-time.
-*   **Multiplayer / Collaborative Readiness:** Lay the technical groundwork (using Unity Netcode) for future collaborative scenarios, such as the collaborative planning and layout of production systems.
+- 🚧 Synchronisation complète de la ligne de production.
+- 🚧 Intégration d'un mode multijoueur collaboratif.
+- 🚧 Développement de nouveaux scénarios pédagogiques.
+- 🚧 Amélioration des interfaces de supervision.
+- 🚧 Extension du Digital Twin vers une plateforme collaborative complète.
 
 ---
 
-## 4. System Architecture
+## 🛠️ Technologies utilisées
 
-The architecture relies on a clear separation between the physical layer, the communication middleware, and the immersive virtual layer.
+| Domaine | Technologies |
+|----------|--------------|
+| Modélisation CAO | CATIA V5, FreeCAD |
+| Modélisation 3D | Blender |
+| Développement VR | Unity Engine 6 |
+| Langage | C# |
+| Casque VR | Meta Quest 3 |
+| Backend | FastAPI |
+| Communication | HTTP, WebSocket |
+| IoT | ESP32 |
+| Gestion de versions | Git & GitHub |
 
-![Global Architecture](figures/architecture_globale.drawio.png)
+> 📖 Pour une description détaillée de l'architecture et des technologies employées, consultez :
+>
+> - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
+> - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
+> - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
+> - [`docs/05_ESP32.md`](docs/05_ESP32.md)
 
-*   **ESP32:** Captures real-time sensor data (e.g., machine temperature).
-*   **FastAPI:** Acts as the central hub, receiving data via HTTP POST requests and exposing it to Unity via WebSockets.
-*   **Unity (Meta Quest 3):** Renders the Digital Twin, manages the pedagogical scenarios, and visualizes the live IoT data in the VR space.
+# 🎯 Objectifs du projet
 
----
+Le développement de ce Digital Twin s'inscrit dans une démarche visant à rapprocher les environnements industriels réels des technologies immersives afin de proposer une plateforme de formation, de supervision et d'expérimentation adaptée aux enjeux de l'Industrie 4.0.
 
-## 5. Educational Scenarios
-
-### Implemented: Timed Labeling Scenario
-This scenario is fully operational and used for experimental research on VR learning.
-*   **Objective:** Train users on the precise sequence of the manual labeling workstation.
-*   **Sessions:** 
-    1.  *Guided:* Full audio/visual assistance.
-    2.  *Autonomous:* No assistance, relies on memory.
-    3.  *Stress Test:* Introduces unexpected events (e.g., missing labels).
-*   **Evaluation:** Tracks completion time, accuracy, and manipulation errors to analyze learning progression.
-
-![Step Manager Interface](figures/Step_manager.png)
-
-### In Development: Collaborative Factory Layout
-*   **Objective:** A multiplayer scenario where several users share the VR space to discuss and rearrange the layout of the factory machines to optimize production flow.
-*   **Technology:** Built using Unity Netcode for GameObjects.
+Le projet répond à plusieurs besoins identifiés au sein de la Smart Factory Connected (SFC), notamment la nécessité de disposer d'un environnement permettant de former les étudiants sans immobiliser les équipements industriels, de tester de nouveaux scénarios pédagogiques et de préparer l'intégration progressive d'un véritable Digital Twin connecté.
 
 ---
 
-## 6. Smart Factory Workstations
+## Objectif général
 
-The HESTIM Smart Factory Connected (SFC) is a miniaturized, automated production line designed for educational and experimental purposes. It reproduces the complete lifecycle of a PEHD bottle.
-
-1.  **Extrusion Blow Molding:** Transformation of plastic granules into bottles.
-2.  **Decarottage (Trimming):** Removal of excess plastic from the molded bottles.
-3.  **Filling & Capping:** Automated dosing of liquid and manual capping of the bottles.
-4.  **Labeling:** Manual application of identifying labels.
-5.  **Quality Control:** Visual and documentary inspection of the final product.
-6.  **Packaging & Storage:** Boxing, palletizing (using a robotic arm), and final storage.
+Concevoir et développer un **Digital Twin immersif** de la ligne de production de flacons en PEHD de la Smart Factory Connected de HESTIM, permettant de reproduire son fonctionnement dans un environnement de Réalité Virtuelle tout en intégrant une première architecture de supervision connectée.
 
 ---
 
-## 7. Current Implementation Status
+## Objectifs spécifiques
 
-*   ✔ **3D Modeling:** Complete for all primary machines.
-*   ✔ **VR Environment:** Assembled and optimized for Meta Quest 3.
-*   ✔ **Machine Logic:** Animations and flow logic integrated.
-*   ✔ **Connected Supervision:** End-to-end pipeline validated (ESP32 -> FastAPI -> Unity) for extrusion temperature.
-*   ✔ **Pedagogical Scenarios:** Timed Labeling scenario fully functional with data tracking.
-*   ❌ **Multiplayer:** In active development for the factory layout scenario.
-*   ❌ **Full Synchronization:** Currently limited to temperature; requires further hardware integration for full PLC data mirroring.
+Le projet se décompose en plusieurs objectifs techniques.
 
----
+### 🏭 Reproduire fidèlement la Smart Factory
 
-## 8. Research Work
-
-This Digital Twin serves as the experimental foundation for academic research into immersive industrial training. The data collected from the Timed Labeling scenario (via `UserSessionData.csv` and the NASA-TLX workload index) is currently being analyzed for a research paper: 
-
-> *Progressive Guidance and Autonomous Learning in VR-Based Industrial Training: A System Design and Experimental Protocol for the HESTIM Smart Factory Connected.*
+- Modéliser l'ensemble des équipements industriels.
+- Reconstituer l'environnement réel de la mini-usine.
+- Optimiser les modèles 3D pour une utilisation en Réalité Virtuelle.
 
 ---
 
-## 9. Contributors
+### 🥽 Développer un environnement immersif
 
-*   **Developer/Researcher:** Saad Joual
-*   **Academic Supervisor:** M. Mourad Zegrari
-*   **Industrial Supervisor:** M. Adonko Carlos Koffi
-*   **SFC Manager:** Mme. Sokhna Gueye
-*   **Institution:** ENSAM Casablanca & HESTIM Engineering & Business School
+- Intégrer les modèles dans Unity.
+- Développer les interactions utilisateur.
+- Simuler le fonctionnement de chaque poste de travail.
+- Garantir une expérience fluide sur Meta Quest 3.
 
 ---
 
-## 10. License
+### 🔄 Mettre en place une supervision connectée
 
-MIT License
+Développer une architecture permettant de transmettre des informations issues de la mini-usine vers le Digital Twin grâce à :
+
+- un ESP32 pour l'acquisition des données ;
+- un serveur FastAPI assurant les échanges ;
+- une communication HTTP/WebSocket ;
+- une visualisation en temps réel dans Unity.
+
+Cette architecture constitue la première étape vers un Digital Twin entièrement synchronisé.
+
+---
+
+### 🎓 Développer des scénarios pédagogiques
+
+Créer des scénarios immersifs permettant :
+
+- l'apprentissage des procédures industrielles ;
+- l'évaluation des performances des utilisateurs ;
+- l'analyse des erreurs de manipulation ;
+- la collecte de données expérimentales destinées aux travaux de recherche.
+
+Le premier scénario implémenté concerne une opération chronométrée d'étiquetage.
+
+---
+
+### 🔬 Fournir une plateforme expérimentale
+
+Le projet sert également de support pour :
+
+- les expérimentations en Réalité Virtuelle ;
+- les recherches sur les Digital Twins industriels ;
+- l'analyse de l'apprentissage immersif ;
+- l'évaluation de nouvelles approches pédagogiques.
+
+---
+
+### 🚀 Préparer les développements futurs
+
+L'architecture a été conçue afin de faciliter l'intégration de nouvelles fonctionnalités, notamment :
+
+- la synchronisation de nouveaux équipements industriels ;
+- le développement de scénarios pédagogiques supplémentaires ;
+- l'intégration d'un mode multijoueur collaboratif ;
+- l'amélioration des interfaces de supervision ;
+- l'extension vers un Digital Twin industriel plus complet.
+
+---
+
+## 📌 Périmètre actuel du projet
+
+À la date de cette version, les développements portent principalement sur :
+
+- la modélisation de la Smart Factory ;
+- l'environnement immersif sous Unity ;
+- la logique de fonctionnement de la ligne de production ;
+- la communication ESP32 → FastAPI → Unity ;
+- un premier scénario pédagogique opérationnel ;
+- une première démonstration de supervision temps réel.
+
+Les fonctionnalités collaboratives et certaines extensions de supervision sont encore en cours de développement et font partie de la feuille de route présentée dans [`docs/08_Roadmap.md`](docs/08_Roadmap.md).
+
+> 📖 Pour une description détaillée des scénarios pédagogiques et des perspectives d'évolution, consultez :
+>
+> - [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md)
+> - [`docs/08_Roadmap.md`](docs/08_Roadmap.md)
+> - [`docs/10_Research.md`](docs/10_Research.md)
+
+# 🏗️ Architecture générale
+
+Le projet repose sur une architecture modulaire permettant de séparer les différentes responsabilités du système tout en facilitant son évolution.
+
+Le Digital Twin est composé de quatre couches principales :
+
+- **La couche physique**, correspondant à la Smart Factory Connected de HESTIM.
+- **La couche d'acquisition**, assurant la récupération des données issues des équipements industriels.
+- **La couche de communication**, responsable du transport et de la distribution des données.
+- **La couche immersive**, permettant la visualisation, l'interaction et l'exécution des scénarios pédagogiques en Réalité Virtuelle.
+
+Le schéma suivant résume l'architecture globale du système.
+
+```text
+                    Smart Factory Connected
+                           │
+                           ▼
+                     ESP32 (IoT Gateway)
+                           │
+                     Réseau WiFi
+                           │
+                           ▼
+                     Serveur FastAPI
+                  (API + WebSocket)
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+      Unity Engine 6             Tableau de bord
+      Digital Twin VR             (Future évolution)
+             │
+             ▼
+        Meta Quest 3
+```
+
+Chaque composant possède un rôle spécifique :
+
+| Composant | Rôle |
+|-----------|------|
+| **Smart Factory Connected** | Production physique des flacons en PEHD. |
+| **ESP32** | Acquisition des données provenant des équipements industriels. |
+| **FastAPI** | Centralisation des échanges de données entre les équipements et le Digital Twin. |
+| **Unity Engine 6** | Simulation immersive, logique métier, scénarios pédagogiques et visualisation des données. |
+| **Meta Quest 3** | Interaction immersive avec la Smart Factory virtuelle. |
+
+L'architecture a été conçue de manière modulaire afin de faciliter l'ajout de nouveaux équipements, de nouveaux capteurs, de nouvelles interfaces de supervision ainsi que l'intégration future d'un mode multijoueur collaboratif.
+
+> 📖 Les détails techniques de cette architecture sont disponibles dans :
+>
+> - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
+> - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
+> - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
+> - [`docs/05_ESP32.md`](docs/05_ESP32.md)
+
+# 🏗️ Architecture générale
+
+Le projet repose sur une architecture modulaire permettant de séparer les différentes responsabilités du système tout en facilitant son évolution.
+
+Le Digital Twin est composé de quatre couches principales :
+
+- **La couche physique**, correspondant à la Smart Factory Connected de HESTIM.
+- **La couche d'acquisition**, assurant la récupération des données issues des équipements industriels.
+- **La couche de communication**, responsable du transport et de la distribution des données.
+- **La couche immersive**, permettant la visualisation, l'interaction et l'exécution des scénarios pédagogiques en Réalité Virtuelle.
+
+Le schéma suivant résume l'architecture globale du système.
+
+```text
+                    Smart Factory Connected
+                           │
+                           ▼
+                     ESP32 (IoT Gateway)
+                           │
+                     Réseau WiFi
+                           │
+                           ▼
+                     Serveur FastAPI
+                  (API + WebSocket)
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+      Unity Engine 6             Tableau de bord
+      Digital Twin VR             (Future évolution)
+             │
+             ▼
+        Meta Quest 3
+```
+
+Chaque composant possède un rôle spécifique :
+
+| Composant | Rôle |
+|-----------|------|
+| **Smart Factory Connected** | Production physique des flacons en PEHD. |
+| **ESP32** | Acquisition des données provenant des équipements industriels. |
+| **FastAPI** | Centralisation des échanges de données entre les équipements et le Digital Twin. |
+| **Unity Engine 6** | Simulation immersive, logique métier, scénarios pédagogiques et visualisation des données. |
+| **Meta Quest 3** | Interaction immersive avec la Smart Factory virtuelle. |
+
+L'architecture a été conçue de manière modulaire afin de faciliter l'ajout de nouveaux équipements, de nouveaux capteurs, de nouvelles interfaces de supervision ainsi que l'intégration future d'un mode multijoueur collaboratif.
+
+> 📖 Les détails techniques de cette architecture sont disponibles dans :
+>
+> - [`docs/02_System_Architecture.md`](docs/02_System_Architecture.md)
+> - [`docs/03_Unity_Architecture.md`](docs/03_Unity_Architecture.md)
+> - [`docs/04_FastAPI.md`](docs/04_FastAPI.md)
+> - [`docs/05_ESP32.md`](docs/05_ESP32.md)
+
