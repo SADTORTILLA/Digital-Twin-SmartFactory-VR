@@ -1,14 +1,22 @@
-# Immersive Digital Twin for a Smart Factory
+# Digital Twin Immersif d'une Smart Factory
 
+<p align="center">
 ![HESTIM Logo](figures/HESTIM_logo.png)
+</p>
 
-> Development of an immersive Digital Twin of a PEHD bottle production line for industrial supervision and educational training at HESTIM.
+> Développement d'un **Digital Twin immersif** d'une ligne de production de flacons en PEHD destiné à la **formation immersive**, à la **supervision industrielle** et à la **recherche en Industrie 4.0**, réalisé dans le cadre de la plateforme **HESTIM Smart Factory Connected (SFC)**.
 
-![Unity](https://img.shields.io/badge/Unity-6-black)
-![VR](https://img.shields.io/badge/VR-Meta%20Quest%203-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-green)
+<p align="center">
+
+![Unity](https://img.shields.io/badge/Unity-6-black?logo=unity)
+![C#](https://img.shields.io/badge/C%23-Programming-blue)
+![Meta Quest](https://img.shields.io/badge/Meta%20Quest%203-VR-blueviolet)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
 ![ESP32](https://img.shields.io/badge/ESP32-IoT-red)
-![Status](https://img.shields.io/badge/Status-In%20Development-orange)
+![Status](https://img.shields.io/badge/Status-In_Development-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+</p>
 
 ![SFC Virtual Environment](figures/3d_assembled_envirement_of_sfc.png)
 
