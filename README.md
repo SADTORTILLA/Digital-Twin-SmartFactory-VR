@@ -337,9 +337,8 @@ Avant de commencer, assurez-vous de disposer des éléments suivants :
 ## 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/<username>/Digital-Twin-SmartFactory-VR.git
+git clone https://github.com/SADTORTILLA/Digital-Twin-SmartFactory-VR.git
 ```
-
 ---
 
 ## 2. Ouvrir le projet Unity
@@ -380,11 +379,9 @@ Pour comprendre rapidement le fonctionnement du projet :
 3. Observer les données temps réel provenant de la mini-usine.
 4. Consulter ensuite la documentation technique.
 
-```
-
 ---
 
-# 🏭 Ligne de production
+## 🏭 Ligne de production
 
 La Smart Factory Connected (SFC) de HESTIM reproduit une ligne de production de flacons en PEHD à échelle réduite. Elle permet de simuler un environnement industriel réel tout en servant de support à l'enseignement, à la recherche et à l'expérimentation.
 
