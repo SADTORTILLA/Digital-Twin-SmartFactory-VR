@@ -1,16 +1,158 @@
-# Research and Data Collection
+# 10 - Recherche scientifique
 
-This project supports academic research on immersive industrial training. The data collected from the VR environment is used to analyze learning curves and the impact of progressive guidance.
+---
 
-## Data Collection
-User sessions in the Timed Labeling Scenario are recorded to CSV files (e.g., `UserSessionData.csv`). The recorded metrics include:
-- Time spent per step.
-- Total session completion time.
-- Number of manipulation errors (false grabs).
+# 1. Introduction
 
-## Questionnaires
-Post-session data is combined with subjective evaluations using the **NASA-TLX** (Task Load Index) to assess perceived cognitive and physical workload. 
+Au-delà du développement d'un environnement immersif, ce projet constitue également une plateforme expérimentale destinée à soutenir des travaux de recherche portant sur les technologies immersives, les Digital Twins industriels et la formation en Industrie 4.0.
 
-## Publications
-The architecture and experimental protocol are the subject of an upcoming research paper:
-> *Progressive Guidance and Autonomous Learning in VR-Based Industrial Training: A System Design and Experimental Protocol for the HESTIM Smart Factory Connected.*
+L'environnement développé permet de réaliser des expérimentations contrôlées, de collecter des données quantitatives et qualitatives, puis d'analyser les performances des utilisateurs lors de scénarios pédagogiques immersifs.
+
+Les travaux de recherche associés sont réalisés dans le cadre des activités de recherche de HESTIM.
+
+---
+
+# 2. Objectifs de la recherche
+
+Les principaux objectifs scientifiques sont :
+
+- étudier l'apprentissage en réalité virtuelle ;
+- analyser l'influence du guidage progressif sur les performances des utilisateurs ;
+- évaluer la charge mentale induite par les scénarios immersifs ;
+- proposer une architecture de Digital Twin adaptée à la formation industrielle ;
+- contribuer au développement de nouvelles approches de supervision immersive.
+
+---
+
+# 3. Collecte des données
+
+Le scénario pédagogique d'étiquetage permet d'enregistrer automatiquement les performances des utilisateurs.
+
+Les données sont exportées sous forme de fichiers CSV afin de faciliter leur traitement statistique.
+
+Les principaux indicateurs enregistrés sont :
+
+- temps total d'exécution ;
+- temps de chaque étape ;
+- ordre des actions réalisées ;
+- nombre d'erreurs de manipulation ;
+- nombre de tentatives incorrectes ;
+- progression entre les différentes sessions.
+
+Ces données permettent d'étudier l'évolution des performances au cours de l'apprentissage.
+
+---
+
+# 4. Évaluation subjective
+
+En complément des mesures objectives, chaque participant remplit un questionnaire permettant d'évaluer son ressenti durant l'expérience.
+
+Le projet utilise actuellement :
+
+- **NASA-TLX (Task Load Index)**
+
+Ce questionnaire permet d'évaluer notamment :
+
+- la demande mentale ;
+- la demande physique ;
+- la demande temporelle ;
+- les performances perçues ;
+- l'effort fourni ;
+- le niveau de frustration.
+
+L'association des données objectives et subjectives permet d'obtenir une analyse plus complète des performances des utilisateurs.
+
+---
+
+# 5. Organisation des données
+
+Les principales données expérimentales sont regroupées dans différents fichiers.
+
+Exemples :
+
+```
+UserSessionData.csv
+NASA_TLX.csv
+ConsentForms/
+ExperimentalResults/
+```
+
+Ces fichiers peuvent ensuite être importés dans des outils d'analyse statistique tels que :
+
+- Python
+- R
+- Excel
+- SPSS
+
+---
+
+# 6. Publications scientifiques
+
+Le projet sert actuellement de support à deux travaux de recherche en cours de rédaction.
+
+## Article 1 — ICINCO
+
+Ce premier article présente principalement l'architecture logicielle du système, le Digital Twin immersif ainsi que le protocole expérimental mis en place pour l'évaluation du scénario pédagogique.
+
+Le manuscrit est disponible dans :
+
+```
+Research/
+└── icinco_paper/
+```
+
+---
+
+## Article 2 — WINCOM
+
+Le second article s'intéresse aux expérimentations réalisées sur la plateforme ainsi qu'à l'analyse des performances des utilisateurs dans les scénarios immersifs.
+
+Le manuscrit est disponible dans :
+
+```
+Research/
+└── Wincom/
+```
+
+Ces deux travaux sont encore en cours de développement et évolueront au fur et à mesure de l'avancement du projet.
+
+---
+
+# 7. Perspectives de recherche
+
+Plusieurs axes de recherche peuvent être développés à partir de cette plateforme.
+
+Parmi eux :
+
+- apprentissage collaboratif en réalité virtuelle ;
+- Digital Twin industriel connecté ;
+- collaboration multi-utilisateur ;
+- supervision immersive ;
+- ergonomie des interfaces VR ;
+- maintenance prédictive ;
+- intelligence artificielle appliquée à l'industrie ;
+- adaptation dynamique des scénarios pédagogiques.
+
+Le caractère modulaire du projet facilite l'intégration de nouvelles expérimentations sans modifier l'architecture générale.
+
+---
+
+# 8. Conseils pour les futurs chercheurs
+
+Si vous poursuivez les travaux scientifiques associés au projet, il est recommandé de :
+
+- conserver le même protocole expérimental afin de garantir la comparabilité des résultats ;
+- documenter précisément toute modification apportée aux scénarios ;
+- versionner les jeux de données ;
+- conserver les questionnaires utilisés ;
+- mettre à jour les articles scientifiques en parallèle des évolutions du projet.
+
+Les publications doivent rester synchronisées avec les développements techniques afin de garantir la cohérence entre les résultats expérimentaux et l'implémentation.
+
+---
+
+# 9. Conclusion
+
+Ce projet ne constitue pas uniquement une plateforme logicielle ; il représente également un support de recherche permettant d'étudier les apports de la réalité virtuelle et des Digital Twins dans le contexte de la formation industrielle.
+
+Grâce à son architecture ouverte et modulaire, il pourra servir de base à de futurs travaux scientifiques, stages et projets de fin d'études portant sur l'Industrie 4.0, les technologies immersives et l'interaction homme-machine.
