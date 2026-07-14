@@ -384,8 +384,49 @@ Pour comprendre rapidement le fonctionnement du projet :
 
 ---
 
-### My suggestion
+# 🏭 Ligne de production
 
-From here, I would **stop adding long explanations** to the README. The remaining sections should be shorter and mostly point to the detailed documentation.
+La Smart Factory Connected (SFC) de HESTIM reproduit une ligne de production de flacons en PEHD à échelle réduite. Elle permet de simuler un environnement industriel réel tout en servant de support à l'enseignement, à la recherche et à l'expérimentation.
 
-That keeps the README concise and professional, while the `docs/` folder becomes the real technical reference. This is the approach used by many mature engineering and open-source projects.
+Le Digital Twin développé dans ce projet reproduit l'ensemble de cette ligne de production en Réalité Virtuelle.
+
+Les principaux postes de travail sont :
+
+1. Extrusion-soufflage
+2. Décarottage
+3. Robot manipulateur
+4. Remplissage
+5. Bouchonnage manuel
+6. Étiquetage manuel
+7. Contrôle qualité
+8. Conditionnement robotisé
+9. Stockage
+
+Chaque poste possède son propre comportement, ses animations ainsi que ses interactions utilisateur lorsqu'elles sont implémentées.
+
+> 📖 Une description détaillée des différents équipements est disponible dans
+> [`docs/01_Project_Overview.md`](docs/01_Project_Overview.md).
+
+# 🎓 Scénarios pédagogiques
+
+Le Digital Twin est conçu comme une plateforme pédagogique permettant de développer différents scénarios de formation immersive.
+
+### ✅ Implémenté
+
+**Scénario d'étiquetage chronométré**
+
+Ce scénario permet d'entraîner l'utilisateur à réaliser une opération d'étiquetage dans un environnement immersif tout en enregistrant ses performances.
+
+Les données collectées sont utilisées dans le cadre des travaux de recherche associés au projet.
+
+### 🚧 En développement
+
+- Implantation des systèmes de production
+- Robotisation de la ligne de production
+- Systèmes de manutention (AGV)
+- Modification dynamique des paramètres de production
+- Mode multijoueur collaboratif
+
+> 📖 Plus d'informations :
+> [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md)
+
