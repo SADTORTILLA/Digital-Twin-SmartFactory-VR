@@ -1,8 +1,8 @@
 # Digital Twin Immersif d'une Smart Factory
 
-<p align="center">
-![HESTIM Logo](figures/HESTIM_logo.png)
-</p>
+<div align="center">
+  <img src="figures/HESTIM_logo.png" alt="HESTIM Logo">
+</div>
 
 > Développement d'un **Digital Twin immersif** d'une ligne de production de flacons en PEHD destiné à la **formation immersive**, à la **supervision industrielle** et à la **recherche en Industrie 4.0**, réalisé dans le cadre de la plateforme **HESTIM Smart Factory Connected (SFC)**.
 
