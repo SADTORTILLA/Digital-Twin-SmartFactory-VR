@@ -1,5 +1,7 @@
 # Immersive Digital Twin for a Smart Factory
 
+![HESTIM Logo](figures/HESTIM_logo.png)
+
 > Development of an immersive Digital Twin of a PEHD bottle production line for industrial supervision and educational training at HESTIM.
 
 ![Unity](https://img.shields.io/badge/Unity-6-black)
@@ -8,9 +10,37 @@
 ![ESP32](https://img.shields.io/badge/ESP32-IoT-red)
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
+![SFC Virtual Environment](figures/3d_assembled_envirement_of_sfc.png)
+
 ---
 
-## 1. Project Overview
+## 1. Getting Started (How to Run the Project)
+
+Follow these steps to get the project up and running in Unity and start the VR simulation. For a more detailed guide, see [docs/06_Installation.md](docs/06_Installation.md).
+
+### Step 1: Open the Project in Unity
+1. Install **Unity 6** with Android/OpenXR build support.
+2. Open **Unity Hub**, click **Add**, and select the root folder of this repository (which contains the `Assets`, `Packages`, and `ProjectSettings` folders).
+3. Wait for Unity to import the assets and resolve dependencies (this may take a few minutes the first time).
+4. In the Project window, navigate to your scenes folder (e.g., `Assets/Scenes/`) and open the main menu scene or `MAIN_scene`.
+
+### Step 2: Run the VR Application
+1. Ensure your **Meta Quest 3** is connected to your PC via Quest Link or Air Link.
+2. Verify that **OpenXR** is set as the active runtime in your Oculus app and Unity Project Settings.
+3. Press the **Play** button in the Unity Editor. You will see the main menu and can navigate to the scenarios:
+
+![Main Menu](figures/Menu_principale.png)
+
+### Step 3: Start the Backend (Optional for IoT Data)
+If you want to test the connected supervision (IoT Pipeline):
+1. Navigate to the `FastAPI` directory in your terminal.
+2. Install Python dependencies: `pip install -r requirements.txt`
+3. Start the server: `uvicorn main:app --host 0.0.0.0 --port 8000`
+4. The Unity app will automatically attempt to connect to this server via WebSocket to retrieve machine states.
+
+---
+
+## 2. Project Overview
 
 This repository contains the complete development of an immersive Digital Twin of a PEHD (High-Density Polyethylene) bottle production line, developed within the Smart Factory Connected (SFC) at the H-FAB laboratory of HESTIM. 
 
@@ -20,7 +50,7 @@ Unlike a standard 3D simulation, this environment is built to be a true Digital 
 
 ---
 
-## 2. Project Objectives
+## 3. Project Objectives
 
 The project is driven by the need to safely and effectively train students and operators on complex Industry 4.0 systems, while also addressing the challenges of physical machine availability. The core objectives are:
 
@@ -36,61 +66,11 @@ To develop an immersive Digital Twin of the HESTIM Smart Factory PEHD bottle pro
 
 ---
 
-## 3. Smart Factory Overview
-
-The HESTIM Smart Factory Connected (SFC) is a miniaturized, automated production line designed for educational and experimental purposes. It reproduces the complete lifecycle of a PEHD bottle, allowing students in industrial engineering to train on Industry 4.0 technologies.
-
-**Production Flow:**
-1.  **Extrusion Blow Molding:** Transformation of plastic granules into bottles.
-2.  **Decarottage (Trimming):** Removal of excess plastic from the molded bottles.
-3.  **Filling & Capping:** Automated dosing of liquid and manual capping of the bottles.
-4.  **Labeling:** Manual application of identifying labels.
-5.  **Quality Control:** Visual and documentary inspection of the final product.
-6.  **Packaging & Storage:** Boxing, palletizing (using a robotic arm), and final storage.
-
----
-
-## 4. Production Line Workstations
-
-### 1. Extrusion Blow Molding
-*   **Purpose:** Manufactures the PEHD bottles from raw plastic granules.
-*   **Operation:** Automated cycle. Outputs bottles with a lower "carrot" (excess plastic) that needs trimming.
-*   **Supervision:** Temperature data from this machine is currently captured by the ESP32 and transmitted to the VR Digital Twin.
-
-### 2. Decarottage (Trimming)
-*   **Purpose:** Removes the excess plastic generated during extrusion.
-*   **Operation:** Automated machine with manual positioning of the bottle.
-
-### 3. Filling & Capping
-*   **Purpose:** Doses the product into the bottles and seals them.
-*   **Operation:** Automated filling via a conveyor belt system, followed by manual capping and self-inspection.
-
-### 4. Labeling (Pedagogical Focus)
-*   **Purpose:** Application of the product label to the smooth face of the bottle.
-*   **Current VR Implementation:** This is the primary interactive training scenario in the VR environment. It requires the user to fetch boxes, handle the bottle, apply the label accurately, and manage the finished products. 
-
-### 5. Quality Control
-*   **Purpose:** Verification of label alignment, adhesion, and overall packaging integrity before final boxing.
-
-### 6. Packaging & Storage
-*   **Purpose:** Grouping the finished bottles into boxes and palletizing them.
-*   **Operation:** Assisted by a robotic arm equipped with a vision camera to automatically pick and place bottles into boxes.
-
----
-
-## 5. System Architecture
+## 4. System Architecture
 
 The architecture relies on a clear separation between the physical layer, the communication middleware, and the immersive virtual layer.
 
-```text
-[ Physical Factory ]        [ Communication Layer ]          [ Immersive Platform ]
-
-  Extrusion Machine                 FastAPI Server                  Unity Engine 6
-        │                                 │                               │
-        ▼                                 ▼                               ▼
-      ESP32   ────────(Wi-Fi)───────► HTTP API  ─────(WebSocket)────► Meta Quest 3
- (Data Acquisition)                 (Data Processing)               (VR Visualization)
-```
+![Global Architecture](figures/architecture_globale.drawio.png)
 
 *   **ESP32:** Captures real-time sensor data (e.g., machine temperature).
 *   **FastAPI:** Acts as the central hub, receiving data via HTTP POST requests and exposing it to Unity via WebSockets.
@@ -98,21 +78,7 @@ The architecture relies on a clear separation between the physical layer, the co
 
 ---
 
-## 6. Software Stack
-
-| Software / Technology | Purpose |
-|-----------------------|----------------------------------------------------|
-| **Unity 6** | Core VR development, logic, and rendering engine. |
-| **OpenXR & XR Toolkit**| VR interaction management. |
-| **CATIA V5** | Primary mechanical 3D CAD modeling. |
-| **FreeCAD** | CAD conversion and adaptation. |
-| **Blender** | 3D optimization, material setup, and robotic arm rigging. |
-| **FastAPI (Python)** | Backend server for IoT data mediation. |
-| **C/C++ (ESP32)** | Microcontroller firmware for data acquisition. |
-
----
-
-## 7. Educational Scenarios
+## 5. Educational Scenarios
 
 ### Implemented: Timed Labeling Scenario
 This scenario is fully operational and used for experimental research on VR learning.
@@ -123,13 +89,28 @@ This scenario is fully operational and used for experimental research on VR lear
     3.  *Stress Test:* Introduces unexpected events (e.g., missing labels).
 *   **Evaluation:** Tracks completion time, accuracy, and manipulation errors to analyze learning progression.
 
+![Step Manager Interface](figures/Step_manager.png)
+
 ### In Development: Collaborative Factory Layout
 *   **Objective:** A multiplayer scenario where several users share the VR space to discuss and rearrange the layout of the factory machines to optimize production flow.
 *   **Technology:** Built using Unity Netcode for GameObjects.
 
 ---
 
-## 8. Current Implementation Status
+## 6. Smart Factory Workstations
+
+The HESTIM Smart Factory Connected (SFC) is a miniaturized, automated production line designed for educational and experimental purposes. It reproduces the complete lifecycle of a PEHD bottle.
+
+1.  **Extrusion Blow Molding:** Transformation of plastic granules into bottles.
+2.  **Decarottage (Trimming):** Removal of excess plastic from the molded bottles.
+3.  **Filling & Capping:** Automated dosing of liquid and manual capping of the bottles.
+4.  **Labeling:** Manual application of identifying labels.
+5.  **Quality Control:** Visual and documentary inspection of the final product.
+6.  **Packaging & Storage:** Boxing, palletizing (using a robotic arm), and final storage.
+
+---
+
+## 7. Current Implementation Status
 
 *   ✔ **3D Modeling:** Complete for all primary machines.
 *   ✔ **VR Environment:** Assembled and optimized for Meta Quest 3.
@@ -141,23 +122,7 @@ This scenario is fully operational and used for experimental research on VR lear
 
 ---
 
-## 9. Future Work
-
-**High Priority:**
-*   Finalize the multiplayer/collaborative architecture (Unity Netcode) for the factory layout scenario.
-*   Expand the IoT pipeline to capture more data points (e.g., machine states, conveyor speeds, fault alerts).
-
-**Medium Priority:**
-*   Implement VR scenarios for robotic arm teaching and AGV (Automated Guided Vehicle) management.
-*   Dynamic production modification (allowing the VR user to send commands back to the factory to alter production speed).
-
-**Long Term:**
-*   Integrate an analytics dashboard within the VR space for real-time production KPI monitoring.
-*   Implement predictive maintenance visualizations.
-
----
-
-## 10. Research Work
+## 8. Research Work
 
 This Digital Twin serves as the experimental foundation for academic research into immersive industrial training. The data collected from the Timed Labeling scenario (via `UserSessionData.csv` and the NASA-TLX workload index) is currently being analyzed for a research paper: 
 
@@ -165,7 +130,7 @@ This Digital Twin serves as the experimental foundation for academic research in
 
 ---
 
-## 11. Contributors
+## 9. Contributors
 
 *   **Developer/Researcher:** Saad Joual
 *   **Academic Supervisor:** M. Mourad Zegrari
@@ -175,6 +140,6 @@ This Digital Twin serves as the experimental foundation for academic research in
 
 ---
 
-## 12. License
+## 10. License
 
 MIT License
