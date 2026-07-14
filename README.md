@@ -427,3 +427,128 @@ Les données collectées sont utilisées dans le cadre des travaux de recherche 
 > 📖 Plus d'informations :
 > [`docs/07_Educational_Scenarios.md`](docs/07_Educational_Scenarios.md)
 
+# 📁 Organisation du dépôt
+
+```text
+Digital-Twin-SmartFactory-VR
+│
+├── Assets/
+├── Packages/
+├── ProjectSettings/
+├── FastAPI/
+├── ESP32/
+├── docs/
+│   ├── 01_Project_Overview.md
+│   ├── 02_System_Architecture.md
+│   ├── 03_Unity_Architecture.md
+│   ├── 04_FastAPI.md
+│   ├── 05_ESP32.md
+│   ├── 06_Installation.md
+│   ├── 07_Educational_Scenarios.md
+│   ├── 08_Roadmap.md
+│   ├── 09_Troubleshooting.md
+│   ├── 10_Research.md
+│   └── 11_Guide_For_Next_Intern.md
+│
+└── README.md
+```
+
+Le dossier **docs/** constitue la documentation officielle du projet.
+
+# 🚀 Perspectives d'évolution
+
+Le projet a été conçu afin d'être évolutif.
+
+Les principaux axes de développement sont :
+
+- Intégration de nouveaux capteurs industriels.
+- Synchronisation complète des équipements de la Smart Factory.
+- Développement de nouveaux scénarios pédagogiques.
+- Implémentation du mode multijoueur.
+- Intégration de tableaux de bord immersifs.
+- Analyse avancée des performances utilisateurs.
+- Connexion à des automates industriels (PLC).
+
+La feuille de route détaillée est disponible dans
+[`docs/08_Roadmap.md`](docs/08_Roadmap.md).
+
+# 👨‍💻 Guide pour le prochain stagiaire
+
+Ce dépôt a été conçu afin de faciliter la reprise du projet par les futurs stagiaires.
+
+Avant de commencer le développement, il est recommandé de :
+
+1. Lire entièrement le README.
+2. Parcourir la documentation du dossier `docs/`.
+3. Installer correctement l'environnement de développement.
+4. Comprendre l'architecture générale.
+5. Tester le scénario d'étiquetage.
+6. Consulter la feuille de route.
+7. Commencer le développement uniquement après avoir compris l'organisation du projet.
+
+> 📖 Guide complet :
+> [`docs/11_Guide_For_Next_Intern.md`](docs/11_Guide_For_Next_Intern.md)
+
+# 🔬 Recherche scientifique
+
+Ce projet constitue également une plateforme expérimentale utilisée dans le cadre de travaux de recherche portant sur :
+
+- les Digital Twins industriels ;
+- la Réalité Virtuelle appliquée à l'industrie ;
+- la formation immersive ;
+- l'apprentissage progressif ;
+- l'évaluation des performances utilisateur.
+
+Les expérimentations réalisées utilisent notamment les données collectées durant les scénarios pédagogiques afin d'évaluer l'efficacité des approches immersives.
+
+Les informations relatives aux publications scientifiques sont disponibles dans
+[`docs/10_Research.md`](docs/10_Research.md).
+
+# 👥 Contributeurs
+
+## Développement
+
+**Saad Joual**
+
+Étudiant en Technologies Immersives — ENSAM Casablanca
+
+Développement du Digital Twin, modélisation 3D, développement Unity, architecture logicielle, communication IoT et travaux de recherche.
+
+---
+
+## Encadrement académique
+
+**M. Mourad Zegrari**
+
+ENSAM Casablanca
+
+---
+
+## Encadrement industriel
+
+**M. Adonko Carlos Koffi**
+
+HESTIM – H-FAB Smart Factory
+
+---
+
+## Collaborateurs
+
+- M. Sridath Tula
+- M. Tadjou TCHOTA
+- M. Youssef Bennani
+- Mme. Sokhna Gueye
+
+---
+
+**Établissements**
+
+- ENSAM Casablanca
+- HESTIM Engineering & Business School
+- H-FAB Smart Factory Connected
+
+# 📄 Licence
+
+Ce projet est distribué sous licence **MIT**.
+
+Voir le fichier [`LICENSE`](LICENSE) pour plus d'informations.
