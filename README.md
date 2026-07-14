@@ -381,7 +381,7 @@ Pour comprendre rapidement le fonctionnement du projet :
 
 ---
 
-## 🏭 Ligne de production
+# 🏭 Ligne de production
 
 La Smart Factory Connected (SFC) de HESTIM reproduit une ligne de production de flacons en PEHD à échelle réduite. Elle permet de simuler un environnement industriel réel tout en servant de support à l'enseignement, à la recherche et à l'expérimentation.
 
